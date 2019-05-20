@@ -201,7 +201,7 @@ button:hover {
     background: -webkit-gradient(linear, left top,left bottom, from(#0a0a0a), to(#343636));
 }
 
-.footer li{
+.footer li,a{
     font-family: 'PG_Roof';
     letter-spacing: 1px;
     display: inline-block;
@@ -212,6 +212,7 @@ button:hover {
     font-weight:bold;
     text-shadow: 7px 7px 5px black;
     cursor: pointer;
+
 }
 
 .footer-images{
@@ -280,4 +281,45 @@ button:hover {
     font-size: 50px;
     background: white;
     border: 0px
+}
+
+/* #ab{
+    width: 1350px;
+    height: 500px;
+    opacity: 0.45;
+} */
+#about-us
+{
+    margin: 150px 60px 100px 60px;
+    padding: 40px 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    background-image: url('Red Smoke on Black Background-preview.jpg');
+}
+
+.headings{
+    font-family: 'PG_Roof';
+    color:rgb(250, 252, 252);
+    font-weight:bold;
+    font-size : 40px;
+    text-align: center;
+    min-width: 500px;
+    min-height: 30px;
+    text-shadow: 10px 10px 5px black;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+iframe{
+    margin: 20px 80px 80px 80px;
+    width: 1200px;
+    height: 450px;
+    border: 0px;
+    text-align: center;
+}
+
+a{
+  text-decoration: none;
 }
