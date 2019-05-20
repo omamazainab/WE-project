@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\home page\home.css">
+</head>
+<body>
+ 
+    <br>
+    <div class="wed">
+        <img src="logo.jpeg" height="100" width="180"  />
+
+        <ul>
+            <li><a href="..\home page\index1.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><button onclick="document.getElementById('id01').style.display='block'">SIGN UP</button></li>
+            <li><button onclick="document.getElementById('id02').style.display='block'">SIGN IN</button></li>
+            <li><button onclick="document.getElementById('id03').style.display='block'">DEALS</button></li>
+            <li><a href="CONTACT US .html">CART</a></li>
+
+        </ul>
+    </div>
+    
+     <!-- The Modal (contains the Sign Up form) -->
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">X</span>
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+  
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+  
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+  
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signup">Sign Up</button>
+        </div>
+      </div>
+    </form>
+ </div>
+
+
+ 
+    <!-- The Modal (contains the Sign In form) -->
+  <div id="id02" class="modal">
+    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">X</span>
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+        <h1>Sign In</h1>
+        <p>Please fill in this form to sign-in.</p>
+        <hr>
+        <label for="email1"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email1" required>
+  
+        <label for="psw1"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw1" required>
+  
+        
+  
+        
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signin">Sign In</button>
+        </div>
+      </div>
+    </form>
+</div>
+
+<!-- The Modal (contains the Deals form) -->
+<div id="id03" class="modal">
+  <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">X</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Deals</h1>
+      
+      <!-- <img src="Deal1.jpg" alt="Deal 1"> -->
+
+      
+      <div class="clearfix">
+      </div>
+    </div>
+  </form>
+</div>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      var modal2 =document.getElementById('id02');
+      var modal3 =document.getElementById('id03');
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+          else if (event.target == modal2) {
+              modal2.style.display = "none";
+          }
+          else if (event.target == modal3) {
+              modal3.style.display = "none";
+          }
+      }
+      </script>
+</body>
+</html>

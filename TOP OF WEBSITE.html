@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="top off website.css">
+</head>
+<body>
+
+     <div class="LogoAndNavigator"> <!--a div for logo and navigator -->
+
+        <br>
+
+        <img src="logo.jpeg" alt="foodies logo" id="logo"> <!--image of logo-->
+
+        <ul class="navigator"> <!--navigator-->
+            
+            <li>MENU</li>
+            <li onclick="window.document.getElementById('sign-up').style.display='block'" >SIGN UP</li>
+            <li onclick="window.document.getElementById('sign-in').style.display='block'">SIGN IN</li>
+            <li>CART</li>
+            <li onclick="window.document.getElementById('Deals').style.display='block'">DEALS</li>
+         </ul>
+    </div>
+
+    <div class="slideShow"> <!--this is html for slideshow-->
+        
+        <div class="mySlides">
+            <img src="Doppler-comp.png" alt="DOPPLER" class="image">
+            <h5 class="itemlabels">Doppler</h5>
+        </div>
+
+        <div class="mySlides">
+                <img src="Animal-Fries-menu.png" alt="ANIMAL FRIES" class="image">
+                <h5 class="itemlabels">Animal Fries</h5>
+        </div>
+
+        <div class="mySlides">
+                <img src="Chocolate Heaven.png" alt="Chocolate Heaven" class="image">
+                <h5 class="itemlabels">Chocolate Heaven</h5>
+        </div>
+
+        <div class="mySlides">
+                <img src="double-tikka-burger.png" alt="Double tikka burger" class="image">
+                <h5 class="itemlabels">Double Tikka</h5>
+        </div>
+
+        <div class="mySlides">
+                <img src="Omelette-N-Tomato-Wrap-Meal-600x600.png" alt="Omelete and tomato wrap" class="image">
+                <h5 class="itemlabels">Omelette and tomato Wraps</h5>
+        </div>
+    
+        <div class="mySlides">
+                <img src="noodle_PNG48.png" alt="noodles" class="image">
+                <h5 class="itemlabels">Noodles</h5>
+        </div>
+        
+        <div class="mySlides">
+                <img src="hot-n-spicy-steak-burger.png" alt="Hot and spicy steak burger" class="image">
+                <h5 class="itemlabels">hot and spicy steak burger</h5>
+        </div>
+    </div>
+
+    <!-- The Modal (contains the Sign Up form) -->
+  
+    <div id="sign-up" class="modal">
+
+        <span onclick="window.document.getElementById('sign-up').style.display='none'" class="exit_modal">
+            X
+        </span>
+
+        <form action="xyz.php" method="POST" class="modal_content">
+                <div class="container">
+                        <h1 class="itemlabels">Sign Up</h1>
+                        <p class="formText">Please fill in this form to create an account.</p>
+                        <hr>
+                        <label for="email" class="formText"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                  
+                        <label for="psw" class="formText"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                        <label for="psw-repeat" class="formText"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                  
+                        <label class="formText">
+                          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                  
+                        <p class="formText">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                  
+                        <div class="clearfix">
+                          <button type="submit" class="signupbtn">Sign Up</button>
+                          <button type="button" onclick="window.document.getElementById('sign-up').style.display='none'" class="cancelbtn">Cancel</button>
+                        </div>
+                      </div>
+        </form>
+
+    </div>
+
+    <!-- The Modal (contains the Sign In form) -->
+  
+    <div id="sign-in" class="modal">
+
+            <span onclick="window.document.getElementById('sign-in').style.display='none'" class="exit_modal">
+                X
+            </span>
+    
+            <form action="xyz.php" method="POST" class="modal_content" id="sign-in-form">
+                    <div class="container">
+                        <h1 class="itemlabels">Sign In</h1>
+                        <p class="formText">Please fill in this form to sign-in.</p>
+                        <hr>
+                        <label for="email1" class="formText"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email1" required>
+                  
+                        <label for="psw" class="formText"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw1" required>
+                  
+                        
+                        
+                        
+                        <div class="clearfix">
+                          <button type="submit" class="signupbtn">Sign In</button>
+                          <button type="button" onclick="window.document.getElementById('sign-in').style.display='none'" class="cancelbtn">Cancel</button>
+                        </div>
+                    </div>
+            </form>
+    
+    </div>
+
+<!-- The Modal (contains the Deals) -->
+
+    <div id="Deals" class="modal">
+
+            <span onclick="window.document.getElementById('Deals').style.display='none'" class="exit_modal">
+                X
+            </span>
+    
+            <form action="xyz.php" method="POST" class="modal_content" id="Deaals-form">
+                    <div class="container">
+                        
+                    </div>
+            </form>
+    
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <footer class="footer"> 
+            <div class="footer-content">
+
+                    <ul>
+                        <li>About us</li>
+                        <li>contact us</li>
+                        <li>career</li>
+                    </ul>
+                  
+                    <div class="image-container">
+                            <img src="images (3).png" class="footer-images" alt="twitter"> 
+                            <img src="images.png" class="footer-images" alt="">
+                            <img src="images (4).png" class="footer-images" alt="">  
+                    </div>  
+            </div>
+    </footer>
+    
+
+    <script src="home.js"></script>
+</body>
+</html>

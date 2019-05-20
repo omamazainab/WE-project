@@ -1,0 +1,201 @@
+@font-face {
+    font-family:'PG_Roof' ;
+    src: url('PG_Roof Runners_active_bold-it.ttf');
+}
+body{
+    background-image: url(background.jpg);
+    min-width: 1100px;
+    min-height: 700px;
+}
+
+.navigator{
+    list-style: none;
+    float: right;
+    
+}
+
+.navigator li{
+    font-family: 'PG_Roof';
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(250, 252, 252);
+    margin: 20px 30px;
+    font-size: 20px;
+    font-weight:bold;
+    text-shadow: 7px 7px 5px black;
+    cursor: pointer;
+}
+
+#logo{
+    width: 120px;
+    height: 85px;
+    float: left;
+}
+
+.mySlides{
+    
+    margin: 10px 450px 10px 450px;
+}
+
+.image{
+    width: 350px;
+    height: 350px;
+    margin-left: 10px;
+}
+
+.itemlabels{
+    font-family: 'PG_Roof';
+    color:rgb(250, 252, 252);
+    font-weight:bold;
+    font-size : 30px;
+    text-align: center;
+    min-width: 500px;
+    min-height: 30px;
+    text-shadow: 10px 10px 5px black;
+    letter-spacing: 1px;
+}
+
+.modal{
+    background-color: rgba(132, 114, 114, 0.5);
+    display: none;
+    z-index: 1;
+    padding-top: 10px; 
+    display: none; /* Hidden by default*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.exit_modal{
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.modal_content{
+    background-image: url(background.jpg);
+    border: 2px solid wheat;
+    /* text-align: center; */
+    color: wheat;
+    width: 600px;
+    height: 700px;
+    max-width: 600px;
+    max-height: 700px;
+    margin: 60px auto 60px auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#sign-in-form{
+    height:500px
+}
+
+.formText{
+    margin-left: 14px;
+}
+
+input[type="text"] , input[type="password"]{
+    width: 540px;
+    padding: 15px;
+    margin: 5px 0 22px 10px;
+    display: inline-block;
+    border-radius: 5px 5px 5px 5px;
+    background: rgb(225, 238, 238);
+    
+}
+
+input[type=text]:focus, input[type=password]:focus{
+    background-color: white;
+    box-shadow: 5px 5px 15px #181717;
+    border-color: black;
+}
+
+/* .clearfix{
+    display: block;
+} */
+
+button:hover {
+    opacity:0.71;
+}
+
+.cancelbtn {
+    
+    width: 200px;
+    padding: 14px 20px;
+    background-color: #f44336;
+    display: block;
+    margin: 2px auto 2px auto;
+    border: 0em;
+    font-family: 'PG_Roof';
+    color:rgb(250, 252, 252);
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.signupbtn{
+    width: 200px;
+    padding: 14px 20px;
+    background-color: transparent;
+    display: block;
+    margin: 10px auto 10px auto;
+    border: 0em;
+    font-family: 'PG_Roof';
+    color:rgb(250, 252, 252);
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+/* footer css */
+
+.footer{
+    padding: 0px;
+    margin: 0px;
+    background: -webkit-gradient(linear, left top,left bottom, from(#0a0a0a), to(#343636));
+}
+
+.footer li{
+    font-family: 'PG_Roof';
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(250, 252, 252);
+    margin: 20px 30px;
+    font-size: 20px;
+    font-weight:bold;
+    text-shadow: 7px 7px 5px black;
+    cursor: pointer;
+}
+
+.footer-images{
+    padding: 10px 10px 10px 10px;
+    width: 70px;
+    height: 70px;
+    margin: 20px 5px 10px 5px;
+    border-radius: 50% 50% 50% 50%;
+    cursor: pointer;
+    
+}
+
+.image-container{
+    margin: 5px 450px 5px 450px; 
+    min-width: 500px;
+    
+}
+
+.footer-content ul{
+    margin: 5px 310px 5px 350px;
+    min-width: 700px;
+}
+
+.footer-content{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
