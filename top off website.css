@@ -2,10 +2,20 @@
     font-family:'PG_Roof' ;
     src: url('PG_Roof Runners_active_bold-it.ttf');
 }
+
+@font-face{
+    font-family: 'PG_ROOF_Small';
+    src: url('PG_Roof Runners_active.ttf');
+}
+
 body{
     background-image: url(background.jpg);
     min-width: 1100px;
     min-height: 700px;
+    width: 1350px;
+    max-width: 1350px;
+    
+    overflow: scroll;
 }
 
 .navigator{
@@ -54,7 +64,22 @@ body{
     min-height: 30px;
     text-shadow: 10px 10px 5px black;
     letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
+
+
+
+
+
+
+
+/* css for modals */
+
+
+
+
+
 
 .modal{
     background-color: rgba(132, 114, 114, 0.5);
@@ -87,10 +112,15 @@ body{
     color: wheat;
     width: 600px;
     height: 700px;
-    max-width: 600px;
-    max-height: 700px;
+    min-width: 600px;
+    min-height: 700px;
     margin: 60px auto 60px auto;
     border-radius: 10px 10px 10px 10px;
+}
+
+#Deals-form{
+    width: 1000px;
+    height: 3500px;
 }
 
 #sign-in-form{
@@ -152,9 +182,20 @@ button:hover {
     font-size: 30px;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* footer css */
 
 .footer{
+    
     padding: 0px;
     margin: 0px;
     background: -webkit-gradient(linear, left top,left bottom, from(#0a0a0a), to(#343636));
@@ -198,4 +239,45 @@ button:hover {
     display: inline-block;
     margin: 0px;
     padding: 0px;
+}
+
+.deal-images{
+    width: 900px;
+    height: 300px;
+    margin: 40px auto 10px auto;
+    display: block;
+}
+
+.itemlabels-deals{
+    font-family: 'PG_ROOF_Small';
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 25px;
+    margin: 40px auto;
+}
+
+#circle-image-container{
+    margin: 50px 130px 50px 130px;
+}
+
+.itemlabels-deals-circle{
+    font-family: 'PG_ROOF_Small';
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+}
+
+.add-to-cart{
+    display: block;
+    margin: 20px auto 20px auto;
+    font-family: 'PG_ROOF_Small';
+    color:red;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 50px;
+    background: white;
+    border: 0px
 }

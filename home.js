@@ -16,7 +16,7 @@ function showSlides() {
 // Get the modal
 var modal = document.getElementById('sign-up');
 var modal2 =document.getElementById('sign-in');
-var modal3 =document.getElementById('id03');
+var modal3 =document.getElementById('Deals');
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
