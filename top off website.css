@@ -1,13 +1,15 @@
+/* new fonts added */
 @font-face {
     font-family:'PG_Roof' ;
     src: url('PG_Roof Runners_active_bold-it.ttf');
 }
-
+/* new fonts added */
 @font-face{
     font-family: 'PG_ROOF_Small';
     src: url('PG_Roof Runners_active.ttf');
 }
 
+/* styling of body */
 body{
     background-image: url(background.jpg);
     min-width: 1100px;
@@ -18,12 +20,14 @@ body{
     overflow: scroll;
 }
 
+/* styling of navigator */
 .navigator{
     list-style: none;
     float: right;
     
 }
 
+/* styling navigator items */
 .navigator li{
     font-family: 'PG_Roof';
     letter-spacing: 1px;
@@ -37,23 +41,32 @@ body{
     cursor: pointer;
 }
 
+/* when the items of navigator will be hovered they will become slightly transparent */
+.navigator li:hover{
+    opacity: 0.6;
+}
+
+/* styling logo image */
 #logo{
     width: 120px;
     height: 85px;
     float: left;
 }
 
+/* styling slideshow */
 .mySlides{
     
     margin: 10px 450px 10px 450px;
 }
 
+/* styling images in slideshow */
 .image{
     width: 350px;
     height: 350px;
     margin-left: 10px;
 }
 
+/* styling the item labels */
 .itemlabels{
     font-family: 'PG_Roof';
     color:rgb(250, 252, 252);
@@ -68,19 +81,7 @@ body{
     margin-bottom: 40px;
 }
 
-
-
-
-
-
-
 /* css for modals */
-
-
-
-
-
-
 .modal{
     background-color: rgba(132, 114, 114, 0.5);
     display: none;
@@ -96,6 +97,7 @@ body{
     
 }
 
+/* styling the cross option to exit modal */
 .exit_modal{
     float: right;
     font-family: Arial, Helvetica, sans-serif;
@@ -105,6 +107,7 @@ body{
     cursor: pointer;
 }
 
+/* styling of modal content */
 .modal_content{
     background-image: url(background.jpg);
     border: 2px solid wheat;
@@ -118,19 +121,23 @@ body{
     border-radius: 10px 10px 10px 10px;
 }
 
+/* specifically making changes in deals modal */
 #Deals-form{
     width: 1000px;
     height: 3500px;
 }
 
+/* specifically making changes in sign in modal */
 #sign-in-form{
     height:500px
 }
 
+/* setting up the styles f only text of form i.e labels/paragraphs */
 .formText{
     margin-left: 14px;
 }
 
+/* styling input options */
 input[type="text"] , input[type="password"]{
     width: 540px;
     padding: 15px;
@@ -141,20 +148,20 @@ input[type="text"] , input[type="password"]{
     
 }
 
+/* styling on focus options */
 input[type=text]:focus, input[type=password]:focus{
     background-color: white;
     box-shadow: 5px 5px 15px #181717;
     border-color: black;
+
 }
 
-/* .clearfix{
-    display: block;
-} */
-
+/* styling on button hover */
 button:hover {
     opacity:0.71;
 }
 
+/* cancel buttons in modals style */
 .cancelbtn {
     
     width: 200px;
@@ -169,6 +176,7 @@ button:hover {
     font-size: 20px;
 }
 
+/* styling all submit buttons */
 .signupbtn{
     width: 200px;
     padding: 14px 20px;
@@ -182,18 +190,7 @@ button:hover {
     font-size: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* footer css */
-
 .footer{
     
     padding: 0px;
@@ -201,7 +198,8 @@ button:hover {
     background: -webkit-gradient(linear, left top,left bottom, from(#0a0a0a), to(#343636));
 }
 
-.footer li,a{
+/* styling the options in the footer */
+.footer li,.footer-content a{
     font-family: 'PG_Roof';
     letter-spacing: 1px;
     display: inline-block;
@@ -215,6 +213,7 @@ button:hover {
 
 }
 
+/* stuling footer images i.e making them circles */
 .footer-images{
     padding: 10px 10px 10px 10px;
     width: 70px;
@@ -225,23 +224,27 @@ button:hover {
     
 }
 
-.image-container{
-    margin: 5px 450px 5px 450px; 
+/* styling image container in footer  */
+.footer-image-container{
+    margin: 5px 450px 5px 520px; 
     min-width: 500px;
     
 }
 
+/* setting up the list styles */
 .footer-content ul{
     margin: 5px 310px 5px 350px;
     min-width: 700px;
 }
 
+/* styling of footer content */
 .footer-content{
     display: inline-block;
     margin: 0px;
     padding: 0px;
 }
 
+/* styling of non-circled images */
 .deal-images{
     width: 900px;
     height: 300px;
@@ -249,6 +252,7 @@ button:hover {
     display: block;
 }
 
+/* styling of labels of non-circled images in deals */
 .itemlabels-deals{
     font-family: 'PG_ROOF_Small';
     letter-spacing: 2px;
@@ -257,10 +261,12 @@ button:hover {
     margin: 40px auto;
 }
 
+/* setting the marin of the circled images in deals */
 #circle-image-container{
     margin: 50px 130px 50px 130px;
 }
 
+/* labeling of circle images in deals */
 .itemlabels-deals-circle{
     font-family: 'PG_ROOF_Small';
     letter-spacing: 2px;
@@ -271,6 +277,7 @@ button:hover {
     vertical-align: top;
 }
 
+/* styling of add to cart button */
 .add-to-cart{
     display: block;
     margin: 20px auto 20px auto;
@@ -280,14 +287,12 @@ button:hover {
     text-align: center;
     font-size: 50px;
     background: white;
-    border: 0px
+    border: 0px;
+    box-shadow: 5px 5px 15px #181717;
+
 }
 
-/* #ab{
-    width: 1350px;
-    height: 500px;
-    opacity: 0.45;
-} */
+/* styling of about us part */
 #about-us
 {
     margin: 150px 60px 100px 60px;
@@ -298,6 +303,7 @@ button:hover {
     background-image: url('Red Smoke on Black Background-preview.jpg');
 }
 
+/* setting of evey heading on the site */
 .headings{
     font-family: 'PG_Roof';
     color:rgb(250, 252, 252);
@@ -312,14 +318,53 @@ button:hover {
     margin-bottom: 40px;
 }
 
+/* styling of the iframe */
 iframe{
     margin: 20px 80px 80px 80px;
     width: 1200px;
     height: 450px;
     border: 0px;
     text-align: center;
+    box-shadow: 5px 5px 15px #181717;
 }
 
-a{
+/* removing all the decorations of links */
+.footer-content a{
   text-decoration: none;
 }
+
+/* makinhg menu option drop down */
+ .drop-down {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* not displaying the list until it is not hovered */
+  .menu-items{               
+      display: none;
+      position: absolute;
+      background-color: gainsboro;
+      min-width: 160px;
+      box-shadow: 5px 5px 15px #181717;
+      z-index: 1;
+      width: 290px;
+      
+  }
+  
+  /* setting the fonts and colors of the menu items */
+  .menu-items li, .menu-items{
+      font-family: 'Courier New', Courier, monospace;
+      width: 290px;
+      margin: 8px 5px;
+      color: #0a0a0a;
+      text-shadow: none;
+  }
+/* list items will be underlined when it is hovered */
+  .menu-items li:hover {
+      text-decoration: underline;
+      color: red;
+  }
+
+  /* display list of menu itms when hovered */
+  .drop-down:hover .menu-items {display: block;}
+ 
