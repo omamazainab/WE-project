@@ -18,6 +18,7 @@ var modal = document.getElementById('sign-up');
 var modal2 =document.getElementById('sign-in');
 var modal3 =document.getElementById('Deals');
 var modal4 =document.getElementById('careers');
+var modal5 =document.getElementById('contact-us');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -32,5 +33,8 @@ window.onclick = function(event) {
     }
     else if (event.target == modal4) {
         modal4.style.display = "none";
+    }
+    else if (event.target == modal5) {
+        modal5.style.display = "none";
     }
 }

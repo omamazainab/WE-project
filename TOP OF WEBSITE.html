@@ -106,7 +106,7 @@
 
 
 
-    <!-- The Modal (contains the Sign In form) -->
+    <!-- The Modal (contains the Careers form) -->
   
     <div id="careers" class="modal">
 
@@ -167,35 +167,35 @@
                     </select>
 
                     <select name="applicantCity" class="careers-select-options" title="Select City" required="">
-                                                    <option value="" selected=""> Select Your City </option>
-                                                    <option value="1"> Karachi </option>
-                                                    <option value="2"> Abbottabad </option>
-                                                    <option value="3"> Lahore </option>
-                                                    <option value="4"> Hyderabad </option>
-                                                    <option value="5"> Islamabad </option>
-                                                    <option value="6"> Peshawar </option>
-                                                    <option value="7"> Multan </option>
-                                                    <option value="9"> Faisalabad </option>
-                                                    <option value="10"> Rawalpindi </option>
-                                                    <option value="11"> Sialkot </option>
-                                                    <option value="12"> Gujranwala </option>
-                                                    <option value="13"> Mangla </option>
-                                                    <option value="14"> Muree </option>
-                                                    <option value="15"> Quetta </option>
-                                                    <option value="16"> Sargodha </option>
-                                                    <option value="18"> Mardan </option>
-                                                    <option value="19"> Bahawalpur </option>
-                                                    <option value="20"> Sahiwal </option>
-                                                    <option value="21"> WahCantt </option>
-                                                    <option value="22"> Kharian </option>
-                                                    <option value="23"> Thokar Niaz Baig </option>
-                                                    <option value="24"> Jhelum </option>
-                                                    <option value="25"> Kala Shah Kaku </option>
-                                                    <option value="26"> Kamoke </option>
-                                                    <option value="27"> Gujrat </option>
-                                                    <option value="28"> Rahwali </option>
-                                                    <option value="29"> Kings Mall Gujranwala </option>
-                                        </select>
+                                    <option value="" selected=""> Select Your City </option>
+                                    <option value="1"> Karachi </option>
+                                    <option value="2"> Abbottabad </option>
+                                    <option value="3"> Lahore </option>
+                                    <option value="4"> Hyderabad </option>
+                                    <option value="5"> Islamabad </option>
+                                    <option value="6"> Peshawar </option>
+                                    <option value="7"> Multan </option>
+                                    <option value="9"> Faisalabad </option>
+                                    <option value="10"> Rawalpindi </option>
+                                    <option value="11"> Sialkot </option>
+                                    <option value="12"> Gujranwala </option>
+                                    <option value="13"> Mangla </option>
+                                    <option value="14"> Muree </option>
+                                    <option value="15"> Quetta </option>
+                                    <option value="16"> Sargodha </option>
+                                    <option value="18"> Mardan </option>
+                                    <option value="19"> Bahawalpur </option>
+                                    <option value="20"> Sahiwal </option>
+                                    <option value="21"> WahCantt </option>
+                                    <option value="22"> Kharian </option>
+                                    <option value="23"> Thokar Niaz Baig </option>
+                                    <option value="24"> Jhelum </option>
+                                    <option value="25"> Kala Shah Kaku </option>
+                                    <option value="26"> Kamoke </option>
+                                    <option value="27"> Gujrat </option>
+                                    <option value="28"> Rahwali </option>
+                                    <option value="29"> Kings Mall Gujranwala </option>
+                        </select>
 
                     <textarea class="form-control-textarea" name="msg" id="msg" title="Cover Letter" placeholder="Cover Letter"></textarea>
                     <input type="file" id="cv" name="cv" title="Upload your cv, (only Ms. Word and PDF files are supported)" required="">
@@ -218,6 +218,83 @@
 
 
 
+<!-- The Modal (contains the ontact us form) -->
+  
+<div id="contact-us" class="modal">
+
+    <span onclick="window.document.getElementById('contact-us').style.display='none'" class="exit_modal">
+        X
+    </span>
+
+    <form action="xyz.php" method="POST" class="modal_content" id="contact-us-form">
+            <div class="container">
+                <h1 class="headings">Contact us</h1>
+
+                <hr>
+
+                <input type="text" placeholder="Enter Your Full Name" name="email" required>
+                  
+                <input type="text" placeholder="Enter Your Email" name="email" required>
+                 
+                <input type="text" placeholder="Enter Your Phone Number" name="phone-no" required>
+                  
+                <select class="careers-select-options" name="type" required="">
+                    <option value="">Type</option>
+                    <option value="Restaurant or Food Experience">Restaurant or Food Experience</option>
+                    <option value="Website or Mobile Experience">Website or Mobile Experience</option>
+                    <option value="Refund">Refund</option>
+                    <option value="Late Delivery"> Late Delivery </option>
+                    <option value="General Inquiry or Comment"> General Inquiry or Comment </option>
+              </select>
+
+              <select name="applicantCity" class="careers-select-options" title="Select City" required="">
+                    <option value="" selected=""> Select Your City </option>
+                    <option value="1"> Karachi </option>
+                    <option value="2"> Abbottabad </option>
+                    <option value="3"> Lahore </option>
+                    <option value="4"> Hyderabad </option>
+                    <option value="5"> Islamabad </option>
+                    <option value="6"> Peshawar </option>
+                    <option value="7"> Multan </option>
+                    <option value="9"> Faisalabad </option>
+                    <option value="10"> Rawalpindi </option>
+                    <option value="11"> Sialkot </option>
+                    <option value="12"> Gujranwala </option>
+                    <option value="13"> Mangla </option>
+                    <option value="14"> Muree </option>
+                    <option value="15"> Quetta </option>
+                    <option value="16"> Sargodha </option>
+                    <option value="18"> Mardan </option>
+                    <option value="19"> Bahawalpur </option>
+                    <option value="20"> Sahiwal </option>
+                    <option value="21"> WahCantt </option>
+                    <option value="22"> Kharian </option>
+                    <option value="23"> Thokar Niaz Baig </option>
+                    <option value="24"> Jhelum </option>
+                    <option value="25"> Kala Shah Kaku </option>
+                    <option value="26"> Kamoke </option>
+                    <option value="27"> Gujrat </option>
+                    <option value="28"> Rahwali </option>
+                    <option value="29"> Kings Mall Gujranwala </option>
+            </select>
+            
+            <textarea required class="form-control-textarea" rows="5" placeholder="Message" name="msg"></textarea>
+                
+                <div class="clearfix">
+                  <button type="submit" class="submitbtn">Submit</button>
+                  <button type="button" onclick="window.document.getElementById('contact-us').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+            </div>
+    </form>
+
+</div>
+
+
+
+
+
+
+
 
 
     <!-- The Modal (contains the Sign Up form) -->
@@ -228,7 +305,7 @@
             X
         </span>
 
-        <form action="xyz.php" method="POST" class="modal_content">
+        <form action="xyz.php" method="POST" class="modal_content" id="sign-up-form">
                 <div class="container">
                         <h1 class="headings">Sign Up</h1>
                         <p class="formText">Please fill in this form to create an account.</p>
@@ -405,7 +482,7 @@
 
                     <ul>
                         <li><a href="#about-us">About us</a> </li>
-                        <li>contact us</li>
+                        <li onclick="window.document.getElementById('contact-us').style.display='block'">contact us</li>
                         <li onclick="window.document.getElementById('careers').style.display='block'">career</li>
                     </ul>
                   
