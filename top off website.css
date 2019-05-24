@@ -121,6 +121,11 @@ body{
     border-radius: 10px 10px 10px 10px;
 }
 
+/* specifically making changes in menu1 appetizers modal */
+#menu1-form{
+    height: 1000px;
+}
+
 /* specifically making changes in deals modal */
 #Deals-form{
     width: 1000px;
@@ -298,7 +303,7 @@ button:hover {
     color:red;
     letter-spacing: 2px;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     background: white;
     border: 0px;
     box-shadow: 5px 5px 15px #181717;
@@ -364,8 +369,13 @@ iframe{
       
   }
   
+  .menu-items a{
+      text-decoration: none;
+      color: #0a0a0a;
+  }
   /* setting the fonts and colors of the menu items */
   .menu-items li, .menu-items{
+      
       font-family: 'Courier New', Courier, monospace;
       width: 290px;
       margin: 8px 5px;
@@ -373,7 +383,7 @@ iframe{
       text-shadow: none;
   }
 /* list items will be underlined when it is hovered */
-  .menu-items li:hover {
+  .menu-items a:hover {
       text-decoration: underline;
       color: red;
   }
@@ -381,7 +391,7 @@ iframe{
   /* display list of menu itms when hovered */
   .drop-down:hover .menu-items {display: block;}
 
-  .careers-select-options{
+ .careers-select-options{
     margin: 5px 0 22px 10px;
     padding: 15px;
     height: 50px;
@@ -396,3 +406,70 @@ iframe{
       width:570px;
       margin: 5px 0 22px 10px;
   }
+
+ #menu-heading{
+    text-align:center;
+    font-weight:bold;
+    font-size:70px;
+    font-family:'PG_Roof' ;
+    color: aliceblue;
+    text-shadow: 7px 7px 5px black;
+ }
+.menu
+ {
+     text-align:center;
+     font-weight:bold;
+     font-size:50px;
+     font-family:'PG_Roof' ;
+     color: aliceblue;
+ }
+ 
+
+ .product
+ {
+  /* background-image: url() */
+  display : flex;
+  flex-wrap: wrap;
+ }
+ .product-card
+ {
+     /* flex:1;
+     flex-basis: 16%; */
+     flex:1 16%;
+     padding:2%;
+     background-color:white;
+     border: 0px;
+    box-shadow: 5px 5px 15px #181717;
+ }
+
+ .product-image img
+ {
+     width:150px;
+     height: 150px;
+ }
+
+ .product-info-name
+ {
+     width: 200px;
+     height: 80px;
+     /* text-align: center; */
+     font-weight:bold;
+     font-size:30px;
+     font-family:'PG_Roof' ;
+     color: red;
+ }
+ 
+
+ 
+ .product-info 
+ {
+   text-align: center;
+ }
+ @media(max-width:920px)
+ {
+     .product-card
+     {
+         flex:1 21%;
+     }
+ }
+  

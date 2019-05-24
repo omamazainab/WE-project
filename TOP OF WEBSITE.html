@@ -29,21 +29,21 @@
             <div class="drop-down">
             <li class=menu-dropdown>MENU</li>
                 <ul class="menu-items">
-                    <li>Appetizer And Fries</li>
-                    <li>Beef and Chicken burgers</li>
-                    <li>Cakes</li>
-                    <li>Cheese Burgers</li>
-                    <li>Icecream shakes</li>
-                    <li>noodles</li>
-                    <li>Sandwich and Chicken Red</li>
-                    <li>Pizza</li>
-                    <li>Donuts</li>
-                    <li>Cold Drinks</li>
+                    <li><a href="menu.html">Appetizer And Fries</a></li>
+                    <li><a href="./menu.html#Beef">Beef and Chicken burgers</a></li>
+                    <li><a href="./menu.html#Cakes">Cakes</a></li>
+                    <li><a href="./menu.html#burger">Cheese Burgers</a></li>
+                    <li><a href="./menu.html#icecream">Icecream shakes</a></li>
+                    <li><a href="./menu.html#noddles">noodles</a></li>
+                    <li><a href="./menu.html#sandwich">Sandwich and Chicken Red</a></li>
+                    <li><a href="./menu.html#pizza">Pizza</a></li>
+                    <li><a href="./menu.html#donuts">Donuts</a></li>
+                    <li><a href="./menu.html#coldrinks">Cold Drinks</a></li>
                 </ul>
             </div>
             <li onclick="window.document.getElementById('sign-up').style.display='block'" >SIGN UP</li>
             <li onclick="window.document.getElementById('sign-in').style.display='block'">SIGN IN</li>
-            <li>CART</li>
+            <li onclick="window.document.getElementById('cart').style.display='block'">CART</li>
             <li onclick="window.document.getElementById('Deals').style.display='block'">DEALS</li>
          </ul>
     </div>
@@ -105,185 +105,52 @@
 
 
 
-
-    <!-- The Modal (contains the Careers form) -->
+<!-- The Modal (contains the Appetizers and fries form) -->
   
-    <div id="careers" class="modal">
+<div id="menu1" class="modal">
 
-        <span onclick="window.document.getElementById('careers').style.display='none'" class="exit_modal">
-            X
-        </span>
-
-        <form action="xyz.php" method="POST" class="modal_content" id="careers-form">
-                <div class="container">
-
-                    <h1 class="headings">Careers at foodies</h1>
-
-                    <p class="formText">Submit your application.</p>
-
-                    <hr>
-
-                    <input type="text" placeholder="Enter Your Full Name" name="email" required>
-                  
-
-                    <input type="text" placeholder="Enter Your Email" name="email" required>
-                  
-                    <select name="degree" class="careers-select-options" title="Degree Level" required="">
-                            <option value="" selected=""> Select Highest Degree </option>
-                            <option value="10"> Matric </option>
-                            <option value="12">Inter</option>
-                            <option value="14">Graduate</option>
-                            <option value="16"> Master </option>
-                            <option value="18">MPhil</option>
-                            <option value="20">PhD</option>
-                    </select>
-
-                    <select name="experienceYear" class="careers-select-options" title="Select Department" required="">
-                            <option value="" selected=""> Do you have Work Experience? </option>
-                            <option value="0"> Fresh </option>
-                            <option value="2"> 1 - 3 Years </option>
-                            <option value="4"> 3 - 5 Years   </option>
-                            <option value="6"> 5 - 7 Years   </option>
-                            <option value="8"> 7 - 9 Years   </option>
-                            <option value="10"> 10 or More Years  </option>
-                    </select>
-
-                    <select name="dept" type="text" class="careers-select-options" id="tags" placeholder="Area">
-                            <option value="" selected=""> Position you are applying for  </option>
-                                       <option value="1">HR and Training</option>
-                                       <option value="2">Restaurant Operation</option>
-                                       <option value="3">Marketing</option>
-                                       <option value="4">MIS/IT</option>
-                                       <option value="5">Supply Chain &amp; warehouse</option>
-                                       <option value="6">Administration</option>
-                                       <option value="7">Law &amp; Communicationn</option>
-                                       <option value="8">Audit</option>
-                                       <option value="9">Business Development</option>
-                                       <option value="10">Project &amp; Site Development</option>
-                                       <option value="12">Call Center</option>
-                                       <option value="13">Maintenance</option>
-                                       <option value="14">Food Quality Assurance</option>
-                       
-                    </select>
-
-                    <select name="applicantCity" class="careers-select-options" title="Select City" required="">
-                                    <option value="" selected=""> Select Your City </option>
-                                    <option value="1"> Karachi </option>
-                                    <option value="2"> Abbottabad </option>
-                                    <option value="3"> Lahore </option>
-                                    <option value="4"> Hyderabad </option>
-                                    <option value="5"> Islamabad </option>
-                                    <option value="6"> Peshawar </option>
-                                    <option value="7"> Multan </option>
-                                    <option value="9"> Faisalabad </option>
-                                    <option value="10"> Rawalpindi </option>
-                                    <option value="11"> Sialkot </option>
-                                    <option value="12"> Gujranwala </option>
-                                    <option value="13"> Mangla </option>
-                                    <option value="14"> Muree </option>
-                                    <option value="15"> Quetta </option>
-                                    <option value="16"> Sargodha </option>
-                                    <option value="18"> Mardan </option>
-                                    <option value="19"> Bahawalpur </option>
-                                    <option value="20"> Sahiwal </option>
-                                    <option value="21"> WahCantt </option>
-                                    <option value="22"> Kharian </option>
-                                    <option value="23"> Thokar Niaz Baig </option>
-                                    <option value="24"> Jhelum </option>
-                                    <option value="25"> Kala Shah Kaku </option>
-                                    <option value="26"> Kamoke </option>
-                                    <option value="27"> Gujrat </option>
-                                    <option value="28"> Rahwali </option>
-                                    <option value="29"> Kings Mall Gujranwala </option>
-                        </select>
-
-                    <textarea class="form-control-textarea" name="msg" id="msg" title="Cover Letter" placeholder="Cover Letter"></textarea>
-                    <input type="file" id="cv" name="cv" title="Upload your cv, (only Ms. Word and PDF files are supported)" required="">
-
-                    <div class="clearfix">
-                            <button type="submit" class="submitbtn">Submit</button>
-                            <button type="button" onclick="window.document.getElementById('careers').style.display='none'" class="cancelbtn">Cancel</button>
-                    </div>
-                </div>
-        </form>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-<!-- The Modal (contains the ontact us form) -->
-  
-<div id="contact-us" class="modal">
-
-    <span onclick="window.document.getElementById('contact-us').style.display='none'" class="exit_modal">
+    <span onclick="window.document.getElementById('menu1').style.display='none'" class="exit_modal">
         X
     </span>
 
-    <form action="xyz.php" method="POST" class="modal_content" id="contact-us-form">
+    <form action="xyz.php" method="POST" class="modal_content" id="menu1-form">
             <div class="container">
-                <h1 class="headings">Contact us</h1>
-
-                <hr>
-
-                <input type="text" placeholder="Enter Your Full Name" name="email" required>
-                  
-                <input type="text" placeholder="Enter Your Email" name="email" required>
-                 
-                <input type="text" placeholder="Enter Your Phone Number" name="phone-no" required>
-                  
-                <select class="careers-select-options" name="type" required="">
-                    <option value="">Type</option>
-                    <option value="Restaurant or Food Experience">Restaurant or Food Experience</option>
-                    <option value="Website or Mobile Experience">Website or Mobile Experience</option>
-                    <option value="Refund">Refund</option>
-                    <option value="Late Delivery"> Late Delivery </option>
-                    <option value="General Inquiry or Comment"> General Inquiry or Comment </option>
-              </select>
-
-              <select name="applicantCity" class="careers-select-options" title="Select City" required="">
-                    <option value="" selected=""> Select Your City </option>
-                    <option value="1"> Karachi </option>
-                    <option value="2"> Abbottabad </option>
-                    <option value="3"> Lahore </option>
-                    <option value="4"> Hyderabad </option>
-                    <option value="5"> Islamabad </option>
-                    <option value="6"> Peshawar </option>
-                    <option value="7"> Multan </option>
-                    <option value="9"> Faisalabad </option>
-                    <option value="10"> Rawalpindi </option>
-                    <option value="11"> Sialkot </option>
-                    <option value="12"> Gujranwala </option>
-                    <option value="13"> Mangla </option>
-                    <option value="14"> Muree </option>
-                    <option value="15"> Quetta </option>
-                    <option value="16"> Sargodha </option>
-                    <option value="18"> Mardan </option>
-                    <option value="19"> Bahawalpur </option>
-                    <option value="20"> Sahiwal </option>
-                    <option value="21"> WahCantt </option>
-                    <option value="22"> Kharian </option>
-                    <option value="23"> Thokar Niaz Baig </option>
-                    <option value="24"> Jhelum </option>
-                    <option value="25"> Kala Shah Kaku </option>
-                    <option value="26"> Kamoke </option>
-                    <option value="27"> Gujrat </option>
-                    <option value="28"> Rahwali </option>
-                    <option value="29"> Kings Mall Gujranwala </option>
-            </select>
-            
-            <textarea required class="form-control-textarea" rows="5" placeholder="Message" name="msg"></textarea>
+                <h1 class="headings">Appetizer And Fries</h1>
                 
-                <div class="clearfix">
-                  <button type="submit" class="submitbtn">Submit</button>
-                  <button type="button" onclick="window.document.getElementById('contact-us').style.display='none'" class="cancelbtn">Cancel</button>
+                <hr>
+                
+                <div>
+                   
+                    <table>
+
+                        <tr>
+                        <td><img src="pictures/Appetizer and Fries/Animal-Fries-menu.png" alt="animal fries" class="menu-item-images"></td>
+                        <td><h3 class="menu-item-subheadings">Animal fries</h3>
+                            <p class="menu-item-details">tray of fries comes topped with a mass of melty cheese,
+                                the same grilled onions,
+                                 and a heart-stopping ladle of Thousand Island dressing.</p>
+                                 <button class="add-to-cart">Add to cart</button></td>
+                        </tr>
+
+                        <tr>
+                                <td><img src="pictures/Appetizer and Fries/curly-fries.png" alt="animal fries" class="menu-item-images"></td>
+                                <td><h3 class="menu-item-subheadings">Curly fries</h3>
+                                    <p class="menu-item-details"> Curly Fries are the perfect blend of crispy fried potatoes and mouthwatering seasoning.
+                                         Curly fries tend to have a golden-brown coating on them,
+                                          as well as a seasoning blend that's heavy on the onion and garlic powders</p>
+                                         <button class="add-to-cart">Add to cart</button></td>
+                        </tr>
+
+                        <tr>
+                                <td><img src="pictures/Appetizer and Fries/Egg-N-Sausage-Wrap-600x600.png" alt="animal fries" class="menu-item-images"></td>
+                                <td><h3 class="menu-item-subheadings">Egg and sausage Wraps</h3>
+                                    <p class="menu-item-details">A flour tortilla is stuffed with fluffy eggs, flavorful sausage and shredded cheddar cheese. Then it’s rolled up and baked till it’s nice and crispy. Served with a side of salsa and sour cream.</p>
+                                         <button class="add-to-cart">Add to cart</button></td>
+                                </tr>
+                    </table>
+                    
                 </div>
+
             </div>
     </form>
 
@@ -291,6 +158,11 @@
 
 
 
+
+
+
+
+    
 
 
 
@@ -463,6 +335,243 @@
         frameborder="0"
         allowfullscreen>
         </iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- The Modal (contains the Careers form) -->
+  
+    <div id="careers" class="modal">
+
+        <span onclick="window.document.getElementById('careers').style.display='none'" class="exit_modal">
+            X
+        </span>
+
+        <form action="xyz.php" method="POST" class="modal_content" id="careers-form">
+                <div class="container">
+
+                    <h1 class="headings">Careers at foodies</h1>
+
+                    <p class="formText">Submit your application.</p>
+
+                    <hr>
+
+                    <input type="text" placeholder="Enter Your Full Name" name="email" required>
+                  
+
+                    <input type="text" placeholder="Enter Your Email" name="email" required>
+                  
+                    <select name="degree" class="careers-select-options" title="Degree Level" required="">
+                            <option value="" selected=""> Select Highest Degree </option>
+                            <option value="10"> Matric </option>
+                            <option value="12">Inter</option>
+                            <option value="14">Graduate</option>
+                            <option value="16"> Master </option>
+                            <option value="18">MPhil</option>
+                            <option value="20">PhD</option>
+                    </select>
+
+                    <select name="experienceYear" class="careers-select-options" title="Select Department" required="">
+                            <option value="" selected=""> Do you have Work Experience? </option>
+                            <option value="0"> Fresh </option>
+                            <option value="2"> 1 - 3 Years </option>
+                            <option value="4"> 3 - 5 Years   </option>
+                            <option value="6"> 5 - 7 Years   </option>
+                            <option value="8"> 7 - 9 Years   </option>
+                            <option value="10"> 10 or More Years  </option>
+                    </select>
+
+                    <select name="dept" type="text" class="careers-select-options" id="tags" placeholder="Area">
+                            <option value="" selected=""> Position you are applying for  </option>
+                                       <option value="1">HR and Training</option>
+                                       <option value="2">Restaurant Operation</option>
+                                       <option value="3">Marketing</option>
+                                       <option value="4">MIS/IT</option>
+                                       <option value="5">Supply Chain &amp; warehouse</option>
+                                       <option value="6">Administration</option>
+                                       <option value="7">Law &amp; Communicationn</option>
+                                       <option value="8">Audit</option>
+                                       <option value="9">Business Development</option>
+                                       <option value="10">Project &amp; Site Development</option>
+                                       <option value="12">Call Center</option>
+                                       <option value="13">Maintenance</option>
+                                       <option value="14">Food Quality Assurance</option>
+                       
+                    </select>
+
+                    <select name="applicantCity" class="careers-select-options" title="Select City" required="">
+                                    <option value="" selected=""> Select Your City </option>
+                                    <option value="1"> Karachi </option>
+                                    <option value="2"> Abbottabad </option>
+                                    <option value="3"> Lahore </option>
+                                    <option value="4"> Hyderabad </option>
+                                    <option value="5"> Islamabad </option>
+                                    <option value="6"> Peshawar </option>
+                                    <option value="7"> Multan </option>
+                                    <option value="9"> Faisalabad </option>
+                                    <option value="10"> Rawalpindi </option>
+                                    <option value="11"> Sialkot </option>
+                                    <option value="12"> Gujranwala </option>
+                                    <option value="13"> Mangla </option>
+                                    <option value="14"> Muree </option>
+                                    <option value="15"> Quetta </option>
+                                    <option value="16"> Sargodha </option>
+                                    <option value="18"> Mardan </option>
+                                    <option value="19"> Bahawalpur </option>
+                                    <option value="20"> Sahiwal </option>
+                                    <option value="21"> WahCantt </option>
+                                    <option value="22"> Kharian </option>
+                                    <option value="23"> Thokar Niaz Baig </option>
+                                    <option value="24"> Jhelum </option>
+                                    <option value="25"> Kala Shah Kaku </option>
+                                    <option value="26"> Kamoke </option>
+                                    <option value="27"> Gujrat </option>
+                                    <option value="28"> Rahwali </option>
+                                    <option value="29"> Kings Mall Gujranwala </option>
+                        </select>
+
+                    <textarea class="form-control-textarea" name="msg" id="msg" title="Cover Letter" placeholder="Cover Letter"></textarea>
+                    <input type="file" id="cv" name="cv" title="Upload your cv, (only Ms. Word and PDF files are supported)" required="">
+
+                    <div class="clearfix">
+                            <button type="submit" class="submitbtn">Submit</button>
+                            <button type="button" onclick="window.document.getElementById('careers').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </div>
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The Modal (contains the ontact us form) -->
+  
+<div id="contact-us" class="modal">
+
+    <span onclick="window.document.getElementById('contact-us').style.display='none'" class="exit_modal">
+        X
+    </span>
+
+    <form action="xyz.php" method="POST" class="modal_content" id="contact-us-form">
+            <div class="container">
+                <h1 class="headings">Contact us</h1>
+
+                <hr>
+
+                <input type="text" placeholder="Enter Your Full Name" name="email" required>
+                  
+                <input type="text" placeholder="Enter Your Email" name="email" required>
+                 
+                <input type="text" placeholder="Enter Your Phone Number" name="phone-no" required>
+                  
+                <select class="careers-select-options" name="type" required="">
+                    <option value="">Type</option>
+                    <option value="Restaurant or Food Experience">Restaurant or Food Experience</option>
+                    <option value="Website or Mobile Experience">Website or Mobile Experience</option>
+                    <option value="Refund">Refund</option>
+                    <option value="Late Delivery"> Late Delivery </option>
+                    <option value="General Inquiry or Comment"> General Inquiry or Comment </option>
+              </select>
+
+              <select name="applicantCity" class="careers-select-options" title="Select City" required="">
+                    <option value="" selected=""> Select Your City </option>
+                    <option value="1"> Karachi </option>
+                    <option value="2"> Abbottabad </option>
+                    <option value="3"> Lahore </option>
+                    <option value="4"> Hyderabad </option>
+                    <option value="5"> Islamabad </option>
+                    <option value="6"> Peshawar </option>
+                    <option value="7"> Multan </option>
+                    <option value="9"> Faisalabad </option>
+                    <option value="10"> Rawalpindi </option>
+                    <option value="11"> Sialkot </option>
+                    <option value="12"> Gujranwala </option>
+                    <option value="13"> Mangla </option>
+                    <option value="14"> Muree </option>
+                    <option value="15"> Quetta </option>
+                    <option value="16"> Sargodha </option>
+                    <option value="18"> Mardan </option>
+                    <option value="19"> Bahawalpur </option>
+                    <option value="20"> Sahiwal </option>
+                    <option value="21"> WahCantt </option>
+                    <option value="22"> Kharian </option>
+                    <option value="23"> Thokar Niaz Baig </option>
+                    <option value="24"> Jhelum </option>
+                    <option value="25"> Kala Shah Kaku </option>
+                    <option value="26"> Kamoke </option>
+                    <option value="27"> Gujrat </option>
+                    <option value="28"> Rahwali </option>
+                    <option value="29"> Kings Mall Gujranwala </option>
+            </select>
+            
+            <textarea required class="form-control-textarea" rows="5" placeholder="Message" name="msg"></textarea>
+                
+            <!-- here reptcha is to be added -->
+
+                <div class="clearfix">
+                  <button type="submit" class="submitbtn">Submit</button>
+                  <button type="button" onclick="window.document.getElementById('contact-us').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+            </div>
+    </form>
+
+</div>
+
+
+
+
+
+
+
+ <!-- cart modal -->
+ <div id="cart" class="modal">
+
+    <span onclick="window.document.getElementById('cart').style.display='none'" class="exit_modal">
+            X
+    </span>
+    <form action="xyz.php" method="POST" class="modal_content">
+            <div class="container">
+    <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+            </div></form>
+</div>
+
+
+
+
+
     
     <br>
     <br>
@@ -494,8 +603,8 @@
             </div>
     </footer>
     
-
-
+    
+    
 
 
 
@@ -506,3 +615,10 @@
     <script src="home.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+	                   
