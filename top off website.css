@@ -28,7 +28,7 @@ body{
 }
 
 /* styling navigator items */
-.navigator li,.navigator a {
+.navigator li {
     font-family: 'PG_Roof';
     letter-spacing: 1px;
     display: inline-block;
@@ -39,6 +39,10 @@ body{
     font-weight:bold;
     text-shadow: 7px 7px 5px black;
     cursor: pointer;
+}
+.navigator a{
+    text-decoration: none;
+    color: white;
 }
 
 /* when the items of navigator will be hovered they will become slightly transparent */
@@ -150,6 +154,10 @@ body{
     margin: 5px 0 22px 10px;
 }
 
+#cart-form{
+    height: auto;
+}
+
 /* setting up the styles f only text of form i.e labels/paragraphs */
 .formText{
     margin-left: 14px;
@@ -244,7 +252,7 @@ button:hover {
 
 /* styling image container in footer  */
 .footer-image-container{
-    margin: 5px 450px 5px 520px; 
+    margin: 5px 450px 5px 450px; 
     min-width: 500px;
     
 }

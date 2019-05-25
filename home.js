@@ -13,42 +13,7 @@ function showSlides() {
   setTimeout(showSlides, 1000); // Change image every 2 seconds
 }
 
-// Get the modal
-var modal = document.getElementById('sign-up');
-var modal2 =document.getElementById('sign-in');
 
-var modal4 =document.getElementById('careers');
-var modal5 =document.getElementById('contact-us');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-    else if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-    
-    else if (event.target == modal4) {
-        modal4.style.display = "none";
-    }
-    else if (event.target == modal5) {
-        modal5.style.display = "none";
-    }
-}
-
-
- 
- 
-        
-        var modal6 = document.getElementById('cart');
-
-        window.onclick = function (event) {
-
-            if (event.target == modal6) {
-                modal6.style.display = "none";
-            }
-        }
         //cart
 
         if (document.readyState == 'loading') {
@@ -126,7 +91,8 @@ window.onclick = function(event) {
             cartRow.innerHTML = cartRowContents
             cartItems.append(cartRow)
             cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
-            cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+            cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged);
+            
         }
 
         function updateCartTotal() {
@@ -143,6 +109,7 @@ window.onclick = function(event) {
             }
             total = Math.round(total * 100) / 100
             document.getElementsByClassName('cart-total-price')[0].innerText = 'RS.' + total
+           
         }
 
         function addToCartClicked(event) {
