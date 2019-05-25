@@ -28,7 +28,7 @@ body{
 }
 
 /* styling navigator items */
-.navigator li{
+.navigator li,.navigator a {
     font-family: 'PG_Roof';
     letter-spacing: 1px;
     display: inline-block;
@@ -285,12 +285,12 @@ button:hover {
 }
 
 /* labeling of circle images in deals */
-.itemlabels-deals-circle{
+ .itemlabels-deals-circle{
     font-family: 'PG_ROOF_Small';
     letter-spacing: 2px;
     text-align: center;
     font-size: 25px;
-    display: inline-block;
+    /* display: inline-block; */
     width: 400px;
     vertical-align: top;
 }
@@ -431,7 +431,7 @@ iframe{
   display : flex;
   flex-wrap: wrap;
  }
- .product-card
+ .menu-container .product-card
  {
      /* flex:1;
      flex-basis: 16%; */
@@ -442,7 +442,7 @@ iframe{
     box-shadow: 5px 5px 15px #181717;
  }
 
- .product-image img
+ .product-image-div .product-image
  {
      width:150px;
      height: 150px;
@@ -459,7 +459,18 @@ iframe{
      color: red;
  }
  
+.deals-container .product-info-name{
+    width: 600px;
+    margin: 2px auto 2px auto;
+    text-align: center;
+    color: white;
+}
 
+.deal-images-circle
+{
+    display: block;
+    margin: 60px auto 40px auto;
+}
  
  .product-info 
  {
@@ -473,3 +484,113 @@ iframe{
      }
  }
   
+
+ .cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: white;
+    font-family: 'PG_Roof';
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'PG_Roof';
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: white;
+    font-family: 'PG_Roof';
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+    font-family: 'PG_Roof';
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: black;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-right: 20px;
+    font-family: 'PG_Roof';
+}
+
+.cart-total-price {
+    color: white;
+    font-size: 1.1em;
+    font-family: 'PG_Roof';
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+    font-family: 'PG_Roof';
+}
