@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,56 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
     <link rel="stylesheet" href="top off website.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 
 <body>
 
 
 
-
-
-
-
-
-
-
-    <div class="LogoAndNavigator">
-        <!--a div for logo and navigator -->
-
-        <br>
-
-        <img src="logo.jpeg" alt="foodies logo" id="logo">
-        <!--image of logo-->
-
-        <ul class="navigator">
-            <!--navigator-->
-
-            <div class="drop-down">
-                <li class=menu-dropdown>MENU</li>
-                <ul class="menu-items">
-                    <li><a href="menu.html">Appetizer And Fries</a></li>
-                    <li><a href="./menu.html#Beef">Beef and Chicken burgers</a></li>
-                    <li><a href="./menu.html#Cakes">Cakes</a></li>
-                    <li><a href="./menu.html#burger">Cheese Burgers</a></li>
-                    <li><a href="./menu.html#icecream">Icecream shakes</a></li>
-                    <li><a href="./menu.html#noddles">noodles</a></li>
-                    <li><a href="./menu.html#sandwich">Sandwich and Chicken Red</a></li>
-                    <li><a href="./menu.html#pizza">Pizza</a></li>
-                    <li><a href="./menu.html#donuts">Donuts</a></li>
-                    <li><a href="./menu.html#coldrinks">Cold Drinks</a></li>
-                </ul>
-            </div>
-            <li onclick="window.document.getElementById('sign-up').style.display='block'">SIGN UP</li>
-            <li onclick="window.document.getElementById('sign-in').style.display='block'">SIGN IN</li>
-            
-        </ul>
-    </div>
-
-
-
-
-
+<?php include('navbar.php'); ?>
 
 
 
@@ -101,131 +62,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-    <!-- The Modal (contains the Sign Up form) -->
-
-    <div id="sign-up" class="modal">
-
-        <span onclick="window.document.getElementById('sign-up').style.display='none'" class="exit_modal">
-            X
-        </span>
-
-        <form action="xyz.php" method="POST" class="modal_content" id="sign-up-form">
-            <div class="container">
-                <h1 class="headings">Sign Up</h1>
-                <p class="formText">Please fill in this form to create an account.</p>
-                <hr>
-                <label for="email" class="formText"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-
-                <label for="psw" class="formText"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <label for="psw-repeat" class="formText"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-                <label class="formText">
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                </label>
-
-                <p class="formText">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms
-                        & Privacy</a>.</p>
-
-                <div class="clearfix">
-                    <button type="submit" class="submitbtn">Sign Up</button>
-                    <button type="button" onclick="window.document.getElementById('sign-up').style.display='none'"
-                        class="cancelbtn">Cancel</button>
-                </div>
-            </div>
-        </form>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- The Modal (contains the Sign In form) -->
-
-    <div id="sign-in" class="modal">
-
-        <span onclick="window.document.getElementById('sign-in').style.display='none'" class="exit_modal">
-            X
-        </span>
-
-        <form action="xyz.php" method="POST" class="modal_content" id="sign-in-form">
-            <div class="container">
-                <h1 class="headings">Sign In</h1>
-                <p class="formText">Please fill in this form to sign-in.</p>
-                <hr>
-                <label for="email1" class="formText"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email1" required>
-
-                <label for="psw" class="formText"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw1" required>
-
-
-
-
-                <div class="clearfix">
-                    <button type="submit" class="submitbtn">Sign In</button>
-                    <button type="button" onclick="window.document.getElementById('sign-in').style.display='none'"
-                        class="cancelbtn">Cancel</button>
-                </div>
-            </div>
-        </form>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
     <div id="about-us">
         <h1 class="headings">About us</h1>
 
@@ -262,7 +98,7 @@
             X
         </span>
 
-        <form action="xyz.php" method="POST" class="modal_content" id="careers-form">
+        <form action="index.php" method="POST" class="modal_content" id="careers-form">
             <div class="container">
 
                 <h1 class="headings">Careers at foodies</h1>
@@ -371,79 +207,7 @@
 
 
 
-    <!-- The Modal (contains the ontact us form) -->
-
-    <div id="contact-us" class="modal">
-
-        <span onclick="window.document.getElementById('contact-us').style.display='none'" class="exit_modal">
-            X
-        </span>
-
-        <form action="xyz.php" method="POST" class="modal_content" id="contact-us-form">
-            <div class="container">
-                <h1 class="headings">Contact us</h1>
-
-                <hr>
-
-                <input type="text" placeholder="Enter Your Full Name" name="email" required>
-
-                <input type="text" placeholder="Enter Your Email" name="email" required>
-
-                <input type="text" placeholder="Enter Your Phone Number" name="phone-no" required>
-
-                <select class="careers-select-options" name="type" required="">
-                    <option value="">Type</option>
-                    <option value="Restaurant or Food Experience">Restaurant or Food Experience</option>
-                    <option value="Website or Mobile Experience">Website or Mobile Experience</option>
-                    <option value="Refund">Refund</option>
-                    <option value="Late Delivery"> Late Delivery </option>
-                    <option value="General Inquiry or Comment"> General Inquiry or Comment </option>
-                </select>
-
-                <select name="applicantCity" class="careers-select-options" title="Select City" required="">
-                    <option value="" selected=""> Select Your City </option>
-                    <option value="1"> Karachi </option>
-                    <option value="2"> Abbottabad </option>
-                    <option value="3"> Lahore </option>
-                    <option value="4"> Hyderabad </option>
-                    <option value="5"> Islamabad </option>
-                    <option value="6"> Peshawar </option>
-                    <option value="7"> Multan </option>
-                    <option value="9"> Faisalabad </option>
-                    <option value="10"> Rawalpindi </option>
-                    <option value="11"> Sialkot </option>
-                    <option value="12"> Gujranwala </option>
-                    <option value="13"> Mangla </option>
-                    <option value="14"> Muree </option>
-                    <option value="15"> Quetta </option>
-                    <option value="16"> Sargodha </option>
-                    <option value="18"> Mardan </option>
-                    <option value="19"> Bahawalpur </option>
-                    <option value="20"> Sahiwal </option>
-                    <option value="21"> WahCantt </option>
-                    <option value="22"> Kharian </option>
-                    <option value="23"> Thokar Niaz Baig </option>
-                    <option value="24"> Jhelum </option>
-                    <option value="25"> Kala Shah Kaku </option>
-                    <option value="26"> Kamoke </option>
-                    <option value="27"> Gujrat </option>
-                    <option value="28"> Rahwali </option>
-                    <option value="29"> Kings Mall Gujranwala </option>
-                </select>
-
-                <textarea required class="form-control-textarea" rows="5" placeholder="Message" name="msg"></textarea>
-
-                <!-- here reptcha is to be added -->
-
-                <div class="clearfix">
-                    <button type="submit" class="submitbtn">Submit</button>
-                    <button type="button" onclick="window.document.getElementById('contact-us').style.display='none'"
-                        class="cancelbtn">Cancel</button>
-                </div>
-            </div>
-        </form>
-
-    </div>
+   
 
 
 
@@ -476,7 +240,7 @@
 
             <ul>
                 <li><a href="#about-us">About us</a> </li>
-                <li onclick="window.document.getElementById('contact-us').style.display='block'">contact us</li>
+                <li><a href="contact-us.php">Contact us</a></li>
                 <li onclick="window.document.getElementById('careers').style.display='block'">career</li>
             </ul>
 

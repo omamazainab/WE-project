@@ -11,27 +11,7 @@
 
 <body>
 
-    <div class="LogoAndNavigator">
-        <!--a div for logo and navigator -->
-
-        <br>
-
-        <img src="logo.jpeg" alt="foodies logo" id="logo">
-        <!--image of logo-->
-
-        <ul class="navigator">
-            <!--navigator-->
-
-            <li onclick="window.document.getElementById('cart').style.display='block'">CART</li>
-            <li><a href="#Deals">DEALS</a></li>
-        </ul>
-    </div>
-
-
-
-
-
-
+<?php include('navbar.php'); ?>
 
 
     <h1 id="menu-heading"> menu</h1>
@@ -886,7 +866,7 @@
                         <strong class="cart-total-title">Total</strong>
                         <span class="cart-total-price">Rs:</span>
                     </div>
-                    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                    <button class="btn-purchase" type="button">PURCHASE</button>
                 </section>
             </div>
         </form>
@@ -1020,7 +1000,7 @@
 
 
 
-    <script src="home.js"></script> 
+    <script src="cart.js"></script> 
 
 
 

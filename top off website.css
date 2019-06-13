@@ -1,66 +1,35 @@
-/* new fonts added */
+/* new fonts added
 @font-face {
     font-family:'PG_Roof' ;
     src: url('PG_Roof Runners_active_bold-it.ttf');
 }
 /* new fonts added */
-@font-face{
+/* @font-face{
     font-family: 'PG_ROOF_Small';
     src: url('PG_Roof Runners_active.ttf');
-}
+} */ 
 
 /* styling of body */
 body{
     background-image: url(background.jpg);
-    min-width: 1100px;
+    /* min-width: 1100px;
     min-height: 700px;
     width: 1350px;
-    max-width: 1350px;
-    
+    max-width: 1350px; */
+    padding: 0%;
+    margin: 0;
     overflow: scroll;
 }
 
 /* styling of navigator */
-.navigator{
-    list-style: none;
-    float: right;
-    
-}
 
-/* styling navigator items */
-.navigator li {
-    font-family: 'PG_Roof';
-    letter-spacing: 1px;
-    display: inline-block;
-    text-decoration: none;
-    color:rgb(250, 252, 252);
-    margin: 20px 30px;
-    font-size: 20px;
-    font-weight:bold;
-    text-shadow: 7px 7px 5px black;
-    cursor: pointer;
-}
-.navigator a{
-    text-decoration: none;
-    color: white;
-}
 
-/* when the items of navigator will be hovered they will become slightly transparent */
-.navigator li:hover{
-    opacity: 0.6;
-}
 
-/* styling logo image */
-#logo{
-    width: 120px;
-    height: 85px;
-    float: left;
-}
 
 /* styling slideshow */
 .mySlides{
     
-    margin: 10px 450px 10px 450px;
+    margin: 150px 450px 10px 450px;
 }
 
 /* styling images in slideshow */
@@ -146,15 +115,13 @@ body{
     height: 1000px;
 }
 
-#contact-us-form{
-    height: 800px;
-}
+
 
 #cv{
     margin: 5px 0 22px 10px;
 }
 
-#cart-form{
+#cart-form,#sign-up-form{
     height: auto;
 }
 
@@ -347,7 +314,7 @@ button:hover {
 /* styling of the iframe */
 iframe{
     margin: 20px 80px 80px 80px;
-    width: 1200px;
+    width: 90%;
     height: 450px;
     border: 0px;
     text-align: center;
@@ -360,44 +327,7 @@ iframe{
 }
 
 /* makinhg menu option drop down */
- .drop-down {
-    position: relative;
-    display: inline-block;
-  }
-
-  /* not displaying the list until it is not hovered */
-  .menu-items{               
-      display: none;
-      position: absolute;
-      background-color: gainsboro;
-      min-width: 160px;
-      box-shadow: 5px 5px 15px #181717;
-      z-index: 1;
-      width: 290px;
-      
-  }
-  
-  .menu-items a{
-      text-decoration: none;
-      color: #0a0a0a;
-  }
-  /* setting the fonts and colors of the menu items */
-  .menu-items li, .menu-items{
-      
-      font-family: 'Courier New', Courier, monospace;
-      width: 290px;
-      margin: 8px 5px;
-      color: #0a0a0a;
-      text-shadow: none;
-  }
-/* list items will be underlined when it is hovered */
-  .menu-items a:hover {
-      text-decoration: underline;
-      color: red;
-  }
-
-  /* display list of menu itms when hovered */
-  .drop-down:hover .menu-items {display: block;}
+ 
 
  .careers-select-options{
     margin: 5px 0 22px 10px;
