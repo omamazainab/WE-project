@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="top off website.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 
 <body>
@@ -846,31 +847,7 @@
     </div>
 
     <!-- cart modal -->
-    <div id="cart" class="modal">
-
-        <span onclick="window.document.getElementById('cart').style.display='none'" class="exit_modal">
-            X
-        </span>
-        <form action="xyz.php" method="POST" class="modal_content" id="cart-form">
-            <div class="container">
-                <section class="container content-section">
-                    <h2 class="section-header headings">CART</h2>
-                    <div class="cart-row">
-                        <span class="cart-item cart-header cart-column">ITEM</span>
-                        <span class="cart-price cart-header cart-column">PRICE</span>
-                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-                    </div>
-                    <div class="cart-items">
-                    </div>
-                    <div class="cart-total">
-                        <strong class="cart-total-title">Total</strong>
-                        <span class="cart-total-price">Rs:</span>
-                    </div>
-                    <button class="btn-purchase" type="button">PURCHASE</button>
-                </section>
-            </div>
-        </form>
-    </div>
+    
 
 
 
@@ -1000,8 +977,7 @@
 
 
 
-    <script src="cart.js"></script> 
-
+    
 
 
 

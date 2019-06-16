@@ -7,8 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <3></3>
-    </ul>li
+   <ul>
+       <li><a href="products.php"  >products</a></li>
+       <li><a href="categories.php"  >categories</a></li>
+       <li><a href="menuU.php"  >menu</a></li>
+       
+   </ul>
 </body>
 </html>

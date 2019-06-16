@@ -10,7 +10,7 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="bootstrap.min.css">   -->
     <link rel="stylesheet" href="sign-up.css">  
-    <!-- <link rel="stylesheet" href="top off website.css"> -->
+    <link rel="stylesheet" href="top off website.css">
     <link rel="stylesheet" href="navbar.css">
 
 </head>

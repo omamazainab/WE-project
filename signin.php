@@ -3,7 +3,8 @@
     session_start();
 
     if(! isset($_SESSION['email'])){
-        $conn = mysqli_connect("localhost","root","","registrations");
+
+       require_once 'connection.php'; 
 
         $loginerr = "";
     

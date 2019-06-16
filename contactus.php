@@ -71,12 +71,7 @@
         }
 
         
-        $conn= mysqli_connect("localhost","root","","registrations");
-
-        if($conn->connect_error){
-            die("Connection Failed");
-        }
-       
+        require_once 'connection.php'; 
 
         if(isset($_POST['contact']) && $vcname && $vcemail && $vcphno && $vctype && $vccity && $vcmsg )
                 {

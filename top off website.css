@@ -183,59 +183,6 @@ button:hover {
     font-size: 30px;
 }
 
-/* footer css */
-.footer{
-    
-    padding: 0px;
-    margin: 0px;
-    background: -webkit-gradient(linear, left top,left bottom, from(#0a0a0a), to(#343636));
-}
-
-/* styling the options in the footer */
-.footer li,.footer-content a{
-    font-family: 'PG_Roof';
-    letter-spacing: 1px;
-    display: inline-block;
-    text-decoration: none;
-    color:rgb(250, 252, 252);
-    margin: 20px 30px;
-    font-size: 20px;
-    font-weight:bold;
-    text-shadow: 7px 7px 5px black;
-    cursor: pointer;
-
-}
-
-/* stuling footer images i.e making them circles */
-.footer-images{
-    padding: 10px 10px 10px 10px;
-    width: 70px;
-    height: 70px;
-    margin: 20px 5px 10px 5px;
-    border-radius: 50% 50% 50% 50%;
-    cursor: pointer;
-    
-}
-
-/* styling image container in footer  */
-.footer-image-container{
-    margin: 5px 450px 5px 450px; 
-    min-width: 500px;
-    
-}
-
-/* setting up the list styles */
-.footer-content ul{
-    margin: 5px 310px 5px 350px;
-    min-width: 700px;
-}
-
-/* styling of footer content */
-.footer-content{
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
-}
 
 /* styling of non-circled images */
 .deal-images{

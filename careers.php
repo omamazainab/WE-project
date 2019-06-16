@@ -13,6 +13,7 @@
     <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
     <link rel="stylesheet" href="top off website.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 
@@ -112,7 +113,7 @@
     </div>
 </form>
 
-
+<?php include('footer.php'); ?>
 </body>
 
 </html>
