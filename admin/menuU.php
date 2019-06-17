@@ -1,6 +1,7 @@
 <?php 
-
-require_once '../connection.php'; 
+session_start();
+ include('navbar.php'); 
+require_once 'connection.php'; 
 
     $category_sql = "SELECT * FROM category";
     $category_query = mysqli_query($conn,$category_sql);
@@ -17,6 +18,21 @@ require_once '../connection.php';
             <h5><?php echo $product_row['product_description']; ?></h5>
             <h5><?php echo $product_row['product_price']; ?></h5>
             <img src="<?php  echo $product_row['product_image']; ?>" alt="" width="100px" height="100px" >
+            <a href="addtocart.php?id=<?php echo $product_row['id']; ?>">add to cart</a>
             
         <?php } ?>
     <?php } ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+
+</head>
+<body>
+    
+</body>
+</html>

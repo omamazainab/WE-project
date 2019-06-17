@@ -10,7 +10,7 @@
 
       if(isset($_POST['edit_category'])){
 
-        require_once '../connection.php'; 
+        require_once 'connection.php'; 
 
         
         $category_name =  $_POST['category_name'];

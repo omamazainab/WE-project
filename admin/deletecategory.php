@@ -1,13 +1,10 @@
 <?php 
 
+require_once 'connection.php'; 
+
 if(isset($_GET) && !empty($_GET)){
     $id = $_GET['id'];
 }
-
-   
-
-        require_once '../connection.php'; 
-
         
         $sql = "DELETE FROM category WHERE id='$id'";
         $query = mysqli_query($conn, $sql);

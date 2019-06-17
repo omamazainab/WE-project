@@ -1,6 +1,6 @@
 <?php   
 
-require_once '../connection.php'; 
+require_once 'connection.php'; 
 
   $sql = "SELECT * FROM products";
   $query = mysqli_query($conn, $sql); 
@@ -12,6 +12,7 @@ require_once '../connection.php';
     <td><?php echo $row['product_category']; ?></td>
     <td><?php echo $row['product_price']; ?></td>
     <td><img src="<?php  echo $row['product_image']; ?>" alt="" width="100px" height="100px" ></td>
+    <td><?php echo $row['product_image']; ?></td>
     <td><a href="editproduct.php?id=<?php echo $row['id']; ?>">Edit</a> | <a href="deleteproduct.php?id=<?php echo $row['id']; ?>">Delete</a></td>
   </tr>
 <?php } 

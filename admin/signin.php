@@ -2,7 +2,7 @@
 
     session_start();
 
-    if(! isset($_SESSION['email'])){
+    if(! isset($_SESSION['email']) & empty($_SESSION['email'])){
 
        require_once 'connection.php'; 
 
@@ -20,6 +20,7 @@
              if(mysqli_num_rows($result) == 1 ){
                 
                 $_SESSION['email'] = $email;
+                $_SESSION['cart'] = NULL;
                 header("location: index.php");
             }else{
                 $loginerr="invalid combination of email and password";
@@ -30,3 +31,4 @@
     }
 
 ?>
+

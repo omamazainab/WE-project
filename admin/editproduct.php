@@ -1,6 +1,6 @@
 <?php 
 
-require_once '../connection.php'; 
+require_once 'connection.php'; 
 
     if(isset($_GET) & !empty($_GET)){
       $id = $_GET['id'];
@@ -81,7 +81,7 @@ require_once '../connection.php';
 <body>
   <form action="" method="POST"  enctype="multipart/form-data">
     <h4><?php echo $current_product['id']; ?></h4>
-    <input type="hidden" name="filepath" value="<?php echo $r['thumb']; ?>">
+    <input type="hidden" name="filepath" value="<?php echo $current_product['product_image']; ?>">
     <input type="text" name="product_name" value="<?php echo $current_product['product_name'] ?>" >
     <input type="text" name="product_description" value="<?php echo $current_product['product_description']; ?>" >
     <input type="text" name="product_price" value="<?php echo $current_product['product_price']; ?>">

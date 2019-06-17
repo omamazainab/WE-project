@@ -1,6 +1,6 @@
 <?php
 
-require_once '../connection.php'; 
+require_once 'connection.php'; 
 
     if(isset($_POST['add_product']))
     {
@@ -33,6 +33,7 @@ require_once '../connection.php';
                                                             $sql = "INSERT INTO products (product_name, product_description, product_category, product_price, product_image) VALUES ('$product_name', '$product_description', '$product_category', '$product_price', '$filepath')";
                                                             $res = mysqli_query($conn, $sql);
                                                             if($res){ echo "<script> alert ('product added Sucessfully '); </script>";
+                                                                header('location:products.php');
                                                             }else{  echo "<script> alert ('failed to add product'); </script>";}
                                             }else{ echo move_uploaded_file($tmp_name,$filepath). "<script> alert ('failed to upload file '); </script>"; }
                                 }else{echo "<script> alert ('only jpeg images are allowed '); </script>";  }
