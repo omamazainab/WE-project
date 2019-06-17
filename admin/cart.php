@@ -1,10 +1,5 @@
 <?php
-session_start();
-if(isset($_SESSION['email']) & !empty($_SESSION['email']) ){
-    
-    require_once 'connection.php'; 
-    $items = $_SESSION['cart'];
-    $array_of_items = explode(",", $items);
+
 ?>
 
 <!DOCTYPE html>
@@ -27,8 +22,15 @@ if(isset($_SESSION['email']) & !empty($_SESSION['email']) ){
         </tr>
         
         <?php
-            if(!empty($array_of_items) & !empty($_SESSION['cart'])){
-            foreach($array_of_items as $item){
+
+            session_start();
+            if(isset($_SESSION['email']) & !empty($_SESSION['email']) ){
+    
+            require_once 'connection.php'; 
+            $items = $_SESSION['cart'];
+            $items = explode(",", $items);
+            if(!empty($items) & !empty($_SESSION['cart'])){
+            foreach($items as $item){
             $sql = "SELECT * FROM products WHERE id='$item'";
             $query = mysqli_query($conn,$sql);
             $product = mysqli_fetch_assoc($query);
