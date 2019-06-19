@@ -1,6 +1,7 @@
 <?php   
-
-require_once '../connection.php'; 
+session_start();
+if(isset($_SESSION['admin_email']) & !empty($_SESSION['admin_email'])){
+require_once 'connection.php'; 
 
   $sql = "SELECT * FROM category";
   $query = mysqli_query($conn, $sql); 
@@ -27,3 +28,9 @@ require_once '../connection.php';
     <a href="addcategory.php">add new category</a>
 </body>
 </html>
+<?php 
+}
+else{
+  header('location: admin_login.php');
+} 
+?>

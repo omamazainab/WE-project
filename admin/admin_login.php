@@ -4,7 +4,7 @@
 
     if(! isset($_SESSION['admin_email'])){
 
-       require_once '../connection.php'; 
+       require_once 'connection.php'; 
 
         $loginerr = "";
     
@@ -20,7 +20,7 @@
              if(mysqli_num_rows($result) == 1 ){
                 
                 $_SESSION['admin_email'] = $admin_email;
-                header("location: index.php");
+                header("location: admin-panel.php");
             }else{
                 $loginerr="invalid combination of email and password";
             }

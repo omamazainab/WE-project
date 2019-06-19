@@ -30,9 +30,10 @@ require_once 'connection.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
 
 </head>
 <body>
-    
+<?php include('footer.php'); ?>
 </body>
 </html>

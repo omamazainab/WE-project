@@ -13,7 +13,7 @@
 
                 <div class="drop-down">
                 <li class="menu-dropdown nav-item"><a class="nav-link" href="menuU.php">menu</a></li>
-                <ul class="menu-items">
+                <!-- <ul class="menu-items">
                     <li><a href="menu.php">Appetizer And Fries</a></li>
                     <li><a href="./menu.html#Beef">Beef and Chicken burgers</a></li>
                     <li><a href="./menu.html#Cakes">Cakes</a></li>
@@ -24,7 +24,7 @@
                     <li><a href="./menu.html#pizza">Pizza</a></li>
                     <li><a href="./menu.html#donuts">Donuts</a></li>
                     <li><a href="./menu.html#coldrinks">Cold Drinks</a></li>
-                </ul>
+                </ul> -->
                 </div>
 
                 <li class="nav-item">

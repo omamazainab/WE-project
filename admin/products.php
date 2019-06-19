@@ -1,5 +1,6 @@
 <?php   
-
+session_start();
+if(isset($_SESSION['admin_email']) & !empty($_SESSION['admin_email'])){
 require_once 'connection.php'; 
 
   $sql = "SELECT * FROM products";
@@ -31,3 +32,9 @@ require_once 'connection.php';
     <a href="addproduct.php">add new product</a>
 </body>
 </html>
+<?php 
+} 
+else{
+  header('location: admin_login.php');
+}
+?>

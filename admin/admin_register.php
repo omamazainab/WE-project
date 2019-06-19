@@ -65,7 +65,7 @@
             
         }
 
-        require_once '../connection.php'; 
+        require_once 'connection.php'; 
 
 
       
@@ -89,9 +89,11 @@
                     echo "<script>
                         alert ('Record Inserted Sucessfully ');
                     </script>";
+                    $_SESSION['admin_email'] = $admin_email;
+                    header('location: admin-panel.php');
                 }
 
-                $_SESSION['admin_email'] = $admin_email;
+                
               }
 
             

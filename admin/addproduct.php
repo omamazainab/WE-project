@@ -1,10 +1,13 @@
 <?php
 
-require_once 'connection.php'; 
+session_start();
 
+if( isset($_SESSION['admin_email'])){
+    require_once 'connection.php'; 
     if(isset($_POST['add_product']))
     {
 
+        
         
 
         $product_name = $_POST['product_name'];
@@ -43,8 +46,6 @@ require_once 'connection.php';
     $sql = "SELECT * FROM category";
     $query = mysqli_query($conn, $sql); 
     
-        
-    
 ?>
 
 <!DOCTYPE html>
@@ -70,3 +71,10 @@ require_once 'connection.php';
     </form>
 </body>
 </html>
+<?php
+}
+else{
+    header('location: admin_login.php');
+}        
+    
+?>

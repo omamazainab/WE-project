@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    if( isset($_SESSION['admin_email'])){
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,3 +20,10 @@
    </ul>
 </body>
 </html>
+
+<?php
+    } 
+    else{
+        header('location: admin_login.php');
+    }
+?>
