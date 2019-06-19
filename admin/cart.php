@@ -48,17 +48,38 @@ session_start();
             <td><?php echo $product['product_name']; ?></td>
             <td>
             
+            
+    <p value="1" id="count" >1</p>
+    <input type="button" value="-" id="moins" onclick="minus()">
+    <input type="button" value="+" id="plus" onclick="plus()">
 
             </td>
             <td><b>RS </b><?php echo  $product['product_price']; ?></td>
             <td><a href="removecartitem.php?remove=<?php echo $product['id']; ?>">remove</a></td>
         </tr>
 
-        
+        <script>
+ var count = 1;
+    var countEl = document.getElementById("count");
+    function plus(){
+        if(count<15){
+        count++;
+        countEl.value = count;
+        document.getElementById('count').innerHTML = count;}
+    }
+    function minus(){
+      if (count > 1) {
+        count--;
+        countEl.value = count;
+        document.getElementById('count').innerHTML = count;
+      }  
+    }
+</script>
 
         <?php 
         
         $sum += $product['product_price'] ;
+        
     } 
         ?>
         
