@@ -24,7 +24,6 @@ session_start();
                 <tr>
                 <th>Product</th>
                 <th>Product Name</th>
-                <th>Product Quantity</th>
                 <th>Product price</th>
             </tr>
             
@@ -49,37 +48,19 @@ session_start();
             <td>
             
             
-    <p value="1" id="count" >1</p>
-    <input type="button" value="-" id="moins" onclick="minus()">
-    <input type="button" value="+" id="plus" onclick="plus()">
+    <p value="1" >1</p>
+    
 
             </td>
             <td><b>RS </b><?php echo  $product['product_price']; ?></td>
             <td><a href="removecartitem.php?remove=<?php echo $product['id']; ?>">remove</a></td>
         </tr>
 
-        <script>
- var count = 1;
-    var countEl = document.getElementById("count");
-    function plus(){
-        if(count<15){
-        count++;
-        countEl.value = count;
-        document.getElementById('count').innerHTML = count;}
-    }
-    function minus(){
-      if (count > 1) {
-        count--;
-        countEl.value = count;
-        document.getElementById('count').innerHTML = count;
-      }  
-    }
-</script>
+        
 
         <?php 
         
         $sum += $product['product_price'] ;
-        
     } 
         ?>
         
@@ -93,7 +74,7 @@ session_start();
         </tr>
 
         <tr>
-                <td><a href="">PURCHASE</a></td>
+                <td><a href="orderplacement.php">PURCHASE</a></td>
         </tr>
         </table>
         <?php  }

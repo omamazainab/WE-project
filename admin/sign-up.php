@@ -100,6 +100,8 @@
          }
 
          $_SESSION['email'] = $email;
+         $_SESSION['cart'] = NULL;
+
        }
 
      
