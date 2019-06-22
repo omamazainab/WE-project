@@ -74,7 +74,7 @@ session_start();
         </tr>
 
         <tr>
-                <td><a href="orderplacement.php">PURCHASE</a></td>
+                <td><a href="orderplacement.php?order_price=<?php echo $sum; ?> ">PURCHASE</a></td>
         </tr>
         </table>
         <?php  }
