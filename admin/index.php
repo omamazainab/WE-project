@@ -10,7 +10,34 @@
     <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="top off website.css"> -->
     <link rel="stylesheet" href="navbar.css">
+    
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .image{
+    height: 225px;
+    width: 22%;
+}
+
+.mySlides{
+    text-align: center;
+    margin: 2% auto;
+}
+
+body{
+    background-image: url(../pictures/background.jpg);
+}
+
+
+.itemlabels{
+    font-size: 24px;
+    color: white;
+    font-family:arial;
+}
+    </style>
+
+
 </head>
 
 <body>
@@ -26,37 +53,37 @@
         <!--this is html for slideshow-->
 
         <div class="mySlides">
-            <img src="Doppler-comp.png" alt="DOPPLER" class="image">
+            <img src="../pictures/Doppler-comp.png" alt="DOPPLER" class="image">
             <h5 class="itemlabels">Doppler</h5>
         </div>
 
         <div class="mySlides">
-            <img src="Animal-Fries-menu.png" alt="ANIMAL FRIES" class="image">
+            <img src="../pictures/Animal-Fries-menu.png" alt="ANIMAL FRIES" class="image">
             <h5 class="itemlabels">Animal Fries</h5>
         </div>
 
         <div class="mySlides">
-            <img src="Chocolate Heaven.png" alt="Chocolate Heaven" class="image">
+            <img src="../pictures/Chocolate Heaven.png" alt="Chocolate Heaven" class="image">
             <h5 class="itemlabels">Chocolate Heaven</h5>
         </div>
 
         <div class="mySlides">
-            <img src="double-tikka-burger.png" alt="Double tikka burger" class="image">
+            <img src="../pictures/double-tikka-burger.png" alt="Double tikka burger" class="image">
             <h5 class="itemlabels">Double Tikka</h5>
         </div>
 
         <div class="mySlides">
-            <img src="Omelette-N-Tomato-Wrap-Meal-600x600.png" alt="Omelete and tomato wrap" class="image">
+            <img src="../pictures/Omelette-N-Tomato-Wrap-Meal-600x600.png" alt="Omelete and tomato wrap" class="image">
             <h5 class="itemlabels">Omelette and tomato Wraps</h5>
         </div>
 
         <div class="mySlides">
-            <img src="noodle_PNG48.png" alt="noodles" class="image">
+            <img src="../pictures/noodle_PNG48.png" alt="noodles" class="image">
             <h5 class="itemlabels">Noodles</h5>
         </div>
 
         <div class="mySlides">
-            <img src="hot-n-spicy-steak-burger.png" alt="Hot and spicy steak burger" class="image">
+            <img src="../pictures/hot-n-spicy-steak-burger.png" alt="Hot and spicy steak burger" class="image">
             <h5 class="itemlabels">hot and spicy steak burger</h5>
         </div>
     </div>

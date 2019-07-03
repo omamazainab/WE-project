@@ -1,3 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+         body{
+            background-image: url(../pictures/admin_panel_backgorund.jpg);
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<?php include ('admin_navbar.php'); ?>
+
+    <h1>ACCEPTED ORDERS</h1>
+</body>
+</html>
+
 <?php 
     session_start();
     if(isset($_SESSION['admin_email']) & !empty($_SESSION['admin_email'])){
@@ -16,7 +39,12 @@
 
             ?>
                 
-
+                <div style="width: 80%;
+    margin: 1% auto;   
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 24px;
+    padding-bottom:1%;">
 
                 <h3><?php echo $customernameresult['fname'] . " " . $customernameresult['lname']; ?></h3>
                 <?php 
@@ -37,7 +65,7 @@
                <h5>total price : <?php echo $row['order_price']; ?></h5>
 
                 <!-- <a href="accept_order.php?accepted_orderid=<?php echo $row['id']; ?>">Accept Order</a> -->
-
+                </div>
                <?php   }
 
     }else{

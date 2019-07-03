@@ -117,10 +117,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="bootstrap.min.css">   -->
-    <link rel="stylesheet" href="sign-up.css">  
-    <link rel="stylesheet" href="top off website.css">
+    <link rel="stylesheet" href="../styles/sign-up.css">  
+    <!-- <link rel="stylesheet" href="top off website.css"> -->
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
+
+    <style>
+    </style>
 
 </head>
 <body>
@@ -153,7 +156,8 @@
                         </div>
                         <span id="span"><?php echo $cperr; ?></span>
                         <div class=radios>
-                            <h6>Gender : </h6>
+                            <h6 style="
+    display: inline-block;">Gender : </h6>
                             <input type="radio" name="gender" value="male" id="male">
                             <label for="male">Male</label>
                             <input type="radio" name="gender" value="female" id="female">

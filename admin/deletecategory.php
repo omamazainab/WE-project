@@ -5,7 +5,8 @@ require_once 'connection.php';
 if(isset($_GET) && !empty($_GET)){
     $id = $_GET['id'];
 }
-        
+        $prodsql = "DELETE FROM products where product_category ='$id'";
+        $query = mysqli_query($conn, $prodsql);
         $sql = "DELETE FROM category WHERE id='$id'";
         $query = mysqli_query($conn, $sql);
         if($query){

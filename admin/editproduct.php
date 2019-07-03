@@ -77,17 +77,50 @@ require_once 'connection.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="navbar.css">
+  <style>
+   body{
+            background-image: url(../pictures/admin_panel_backgorund.jpg);
+            text-align: center;
+            font-family:arial;
+        }
+        input,select{
+    border-radius: 6px 6px 6px 6px;
+    padding: 1% 5%;
+    margin: 2% auto;
+    width: 80%;
+    display: block;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: rgba(70,50,50,.9);
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+  </style>
+
 </head>
 <body>
-  <form action="" method="POST"  enctype="multipart/form-data">
-    <h4><?php echo $current_product['id']; ?></h4>
+<?php include ('admin_navbar.php'); ?>
+
+
+
+<div style=" background-color: rgba(0,0,0,0.5);
+    width: 80%;
+    margin: 3% auto;padding: 1%;
+">
+<h1 style="color:white;">Edit the product</h1>
+<form action="" method="POST"  enctype="multipart/form-data">
+    <!-- <h4><?php //echo $current_product['id']; ?></h4> -->
     <input type="hidden" name="filepath" value="<?php echo $current_product['product_image']; ?>">
     <input type="text" name="product_name" value="<?php echo $current_product['product_name'] ?>" >
     <input type="text" name="product_description" value="<?php echo $current_product['product_description']; ?>" >
     <input type="text" name="product_price" value="<?php echo $current_product['product_price']; ?>">
 
   
-    <select name="product_category" id="">
+    <select name="product_category" id="" style="width:89%;">
           <?php while($cart_row = mysqli_fetch_assoc($cart_query)){ ?>
           <option value="<?php echo $cart_row['id'] ?>" <?php if($id=$current_product['product_category']){echo "selected";} ?> > <?php echo $cart_row['category_name']; ?> </option>
           <?php } ?>
@@ -96,7 +129,10 @@ require_once 'connection.php';
     <?php if(isset($current_product['product_image']) & !empty($current_product['product_image'])){ ?>
     <br>
       <img src="<?php echo $current_product['product_image'] ?>" widht="100px" height="100px">
-      <a href="deleteproductimage.php?id=<?php echo $current_product['id']; ?>">Delete Image</a>
+      <a style="padding: 1%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    text-decoration: none;" href="deleteproductimage.php?id=<?php echo $current_product['id']; ?>">Delete Image</a>
     <?php }else{ ?>
     <input type="file" name="product_image" id="product_image">
     <p>Only jpg/png are allowed.</p>
@@ -106,5 +142,7 @@ require_once 'connection.php';
 
     <input type="submit" name="edit_product" value="edit_product">
   </form>
+</div>
+
 </body>
 </html>

@@ -42,8 +42,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="bootstrap.min.css">   -->
-    <link rel="stylesheet" href="sign-up.css"> 
-    <link rel="stylesheet" href="top off website.css"> 
+    <link rel="stylesheet" href="../styles/sign-up.css">  
+        <!-- <link rel="stylesheet" href="top off website.css">  -->
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
 

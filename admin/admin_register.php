@@ -110,7 +110,13 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="bootstrap.min.css">   -->
     <link rel="stylesheet" href="sign-up.css">  
-    
+    <style>
+         body{
+            background-image: url(../pictures/admin_panel_backgorund.jpg);
+            text-align: center;
+        }
+
+    </style>
 
 </head>
 <body>

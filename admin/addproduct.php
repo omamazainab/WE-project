@@ -55,8 +55,40 @@ if( isset($_SESSION['admin_email'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+         body{
+            background-image: url(../pictures/admin_panel_backgorund.jpg);
+            text-align: center;
+            font-family:arial;
+        }
+
+        input,select{
+            display: block;
+            text-align: center;
+            margin: 1% auto;
+            width: 60%;
+            height: 40px;
+            border-radius: 5px;
+            font-size:20px;
+        }
+
+        input[type="submit"]{
+    color: white;
+    background-color: rgba(70,50,50,.9);
+    border-width: 0px;
+    border-radius: 0px;
+}
+    </style>
 </head>
 <body>
+<?php include ('admin_navbar.php'); ?>
+<div style=" background-color: rgba(0,0,0,0.5);
+    width: 80%;
+    margin: 3% auto;padding: 1%;
+">
+<h1 style="color: white;
+    padding: 2%;">Add A New Product</h1>
     <form action="addproduct.php" method="POST" enctype="multipart/form-data">
         <input type="text" name="product_name" placeholder="enter product name">
         <input type="text" name="product_description" placeholder="enter product description">
@@ -69,6 +101,7 @@ if( isset($_SESSION['admin_email'])){
         <input type="file" name="product_image">
         <input type="submit" name="add_product" value="add_product">
     </form>
+</div>
 </body>
 </html>
 <?php

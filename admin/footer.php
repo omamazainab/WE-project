@@ -1,4 +1,5 @@
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
    <footer>
    <div class="footer container">
@@ -7,6 +8,7 @@
             <p>We are scrupcious about the laws in Pakistan to ensure the highest food safety and Hala standards food safety regulations offer from country to country and range from standards set by local government authorities to international regulatory bodies such as the world health organization. Generally, Foodies sets it's own company standards at or above very highest of international standards.</p>
         </div>
         <div class="column list">
+            <h4>More</h4>
             <ul>
                 <li>About Us</li>
                 <li>Contanct us</li>
@@ -16,9 +18,9 @@
         <div class="column list">
             <h4>Follow Us Here</h4>
             <ul>
-                <li>Twitter</li>
-                <li>Facebook</li>
-                <li>Instagram</li>
+                <li>Twitter <i style="font-size:19px" class="fa">&#xf099;</i></li>
+                <li>Facebook <i style="font-size:19px" class="fa">&#xf230;</i></li>
+                <li>Instagram <i style="font-size:19px" class="fa">&#xf16d;</i></li>
             </ul>
         </div>
         <div class="column text">

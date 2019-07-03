@@ -11,6 +11,45 @@ session_start();
     <title>Document</title>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
+    <style>
+
+body{
+    background-image: url(../pictures/background.jpg);
+}
+
+        table{
+            text-align: center;
+    margin: 1% auto;
+    width: 90%;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 22px;
+    text-transform: capitalize;
+    
+        }
+
+        th{
+            padding: 2% 1%;
+    font-size: 33px;
+    font-family: arial;
+    background-color: rgba(141,0,0,0.8);
+        }
+
+        .remove-button{
+            text-decoration: none;
+    color: white;
+    padding: 5% 11%;
+    background-color: red;
+    font-size: 24px;
+        }
+      
+        .product-image{
+            width:100px;
+            height:100px;
+        }
+
+
+    </style>
 </head>
 <body>
 <?php include('navbar.php'); ?>
@@ -25,6 +64,7 @@ session_start();
                 <th>Product</th>
                 <th>Product Name</th>
                 <th>Product price</th>
+                <th></th>
             </tr>
             
     
@@ -43,17 +83,13 @@ session_start();
             ?>
 
         <tr>
-            <td><img src="<?php echo $product['product_image'] ?>" alt=""></td>
+            <td><img class="product-image" src="<?php echo $product['product_image'] ?>" alt=""></td>
             <td><?php echo $product['product_name']; ?></td>
-            <td>
             
-            
-    <p value="1" >1</p>
-    
-
-            </td>
             <td><b>RS </b><?php echo  $product['product_price']; ?></td>
-            <td><a href="removecartitem.php?remove=<?php echo $product['id']; ?>">remove</a></td>
+            <td>
+                <a class="remove-button" href="removecartitem.php?remove=<?php echo $product['id']; ?>">remove</a>
+            </td>
         </tr>
 
         
@@ -66,17 +102,15 @@ session_start();
         
         
 
-        <tr>
+       
+               
         
-                <td></td>
-                <td></td>
-                <td><b>total price</b><br><b>RS </b> <?php echo $sum; ?> </td>
-        </tr>
-
-        <tr>
-                <td><a href="orderplacement.php?order_price=<?php echo $sum; ?> ">PURCHASE</a></td>
-        </tr>
         </table>
+        <div style="display: inline-block;text-align: right; font-size: 24px; color: white;padding: 0% 20%;"><b>total price</b><br><b>RS </b> <?php echo $sum; ?> </div>
+        <div style="display: inline-block;padding: 1% 19%; font-size: 26px;background-color: rgba(255,0,0,0.5);"><a style="color: white; text-decoration: none;" href="orderplacement.php?order_price=<?php echo $sum; ?> ">PURCHASE</a></div>
+       
+        
+        
         <?php  }
 
     }
