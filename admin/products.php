@@ -61,13 +61,20 @@ require_once 'connection.php';
   $sql = "SELECT * FROM products";
   $query = mysqli_query($conn, $sql); 
   while ($row = mysqli_fetch_assoc($query)) {
+    
+        $adminsql = "SELECT * FROM admin_table WHERE id={$row['admin_id']}";
+        $adminquery =  mysqli_query($conn,$adminsql);
+        $adminresult = mysqli_fetch_assoc($adminquery);
+
 ?>
+  
 
   <div class="products">
     <h4><?php echo $row['product_name']; ?></h4>
     <img src="<?php  echo $row['product_image']; ?>" alt="" width="100px" height="100px" >
     <h4><?php echo $row['product_price']; ?></h4>
     <h4><?php echo $row['product_description']; ?></h4>
+    <h4>added by: <?php echo $adminresult['admin_name'] ?></h4>
     <div><a class="button edit-button" href="editproduct.php?id=<?php echo $row['id']; ?>">Edit</a>  <a class="button delete-button" href="deleteproduct.php?id=<?php echo $row['id']; ?>">Delete</a></div>
   </div>
 <?php } 

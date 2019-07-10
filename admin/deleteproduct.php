@@ -6,7 +6,15 @@
         $id = $_GET['id'];
     }
 
-    
+    $sql = "UPDATE ordered_products SET product_id = NULL WHERE product_id='$id'";
+    $query = mysqli_query($conn, $sql);
+    if($query){
+        echo "<script>
+        alert ('Deleted Sucessfully ');
+    </script>";}else{
+        echo "<script>
+        alert ('Failed to delete ');
+    </script>";}
     $sql = "DELETE FROM products WHERE id='$id'";
     $query = mysqli_query($conn, $sql);
     if($query){

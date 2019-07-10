@@ -10,9 +10,12 @@
         <div class="column list">
             <h4>More</h4>
             <ul>
-                <li>About Us</li>
-                <li>Contanct us</li>
-                <li>Careers</li>
+                <li><a href="index.php#about-us" style="color: white;
+    text-decoration: none;">About Us</a></li>
+                <li><a href="contact-us.php" class="link" style="color: white;
+    text-decoration: none;">Contact Us</a></li>
+                <li><a href="careers.php" class="link" style="color: white;
+    text-decoration: none;">Careers</a></li>
             </ul>
         </div>
         <div class="column list">

@@ -18,7 +18,7 @@
                 $ln = strlen($str);
                 if($ln>15){
                     return "password should be less then 15 characters";
-                }elseif($ln < 5 && $ln >= 1){
+                }else if($ln < 5 && $ln >= 1){
                     return "password should be greater than 4 characters";
                 }
                 return false;
@@ -35,7 +35,7 @@
 
             if(empty($_POST['admin_email'])){
                 $eerr="E-mail required";
-            }elseif(!filter_var($_POST['admin_email'],FILTER_VALIDATE_EMAIL)){
+            }else if(!filter_var($_POST['admin_email'],FILTER_VALIDATE_EMAIL)){
                 $eerr = "Invalid Email";
             }else{
                 $admin_email = validate_input($_POST['admin_email']);
@@ -46,7 +46,7 @@
 
             if(empty($_POST['admin_password'])){
                 $perr = "password field required";
-            }elseif($lenght){
+            }else if($lenght){
                 $perr = $lenght;
             }else{
                 $admin_password = validate_input($_POST['admin_password']);
@@ -55,10 +55,10 @@
 
             if(empty($_POST['cpassword'])){
                 $cperr = "confirm password required";
-            }elseif($_POST['cpassword'] != $admin_password){
+            }else if($_POST['cpassword'] != $admin_password){
                 $cperr = "password do not match";
             }
-            elseif($_POST['cpassword']==$admin_password){
+            else if($_POST['cpassword']==$admin_password){
                 $vcpassword = true;
             }
 
@@ -117,6 +117,20 @@
         }
 
     </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+         var password = "password";
+         $(document).ready(
+            check_password()
+         );   
+         function check_password(){
+               var input_password = prompt("enter password");
+               if(input_password !=  password)
+              { check_password();}
+               else 
+              { alert('welcome');}
+             }
+    </script>
 
 </head>
 <body>

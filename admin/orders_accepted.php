@@ -32,10 +32,15 @@
 
         while($row = mysqli_fetch_assoc($query)){
 
+        
         $customersql = "SELECT * FROM customer WHERE id={$row['customer_id']}";
         $customerquery =  mysqli_query($conn,$customersql);
         $customernameresult = mysqli_fetch_assoc($customerquery);
         
+
+        $adminsql = "SELECT * FROM admin_table WHERE id={$row['admin_id']}";
+        $adminquery =  mysqli_query($conn,$adminsql);
+        $adminresult = mysqli_fetch_assoc($adminquery);
 
             ?>
                 
@@ -45,7 +50,7 @@
     color: white;
     font-size: 24px;
     padding-bottom:1%;">
-
+                <h3>accepted by <?php echo $adminresult['admin_name']; ?> </h3>
                 <h3><?php echo $customernameresult['fname'] . " " . $customernameresult['lname']; ?></h3>
                 <?php 
                 $id = $row["id"];
@@ -53,14 +58,22 @@
                 $products_query =  mysqli_query($conn,$orderdproductsql);
                 while($orderdetailsrow = mysqli_fetch_assoc($products_query)){
 
+                    if($orderdetailsrow['product_id'] != NULL ){
                     $productnamesql = "SELECT * FROM products WHERE id={$orderdetailsrow['product_id']}";
                     $productnamequery =  mysqli_query($conn,$productnamesql);
                     $productnameresult = mysqli_fetch_assoc($productnamequery);
-        
+
                     ?>
                     <p><?php echo $productnameresult['product_name'] . " " . $productnameresult['product_price']; ?></p>
                     
-               <?php } ?>
+                    <?php }
+                    else {
+                        ?>
+
+                        <p>the product was deleted</p>
+
+                    <?php }
+                } ?>
 
                <h5>total price : <?php echo $row['order_price']; ?></h5>
 

@@ -2,6 +2,9 @@
     session_start();
     if(isset($_SESSION['admin_email']) & !empty($_SESSION['admin_email'])){
 
+        $admin_email = $_SESSION['admin_email']; 
+
+
         require_once 'connection.php';
 
         if(isset($_GET) && !empty($_GET)){
@@ -12,7 +15,11 @@
 
         $true = TRUE;    
        
-        $sql = "UPDATE orders SET accepted = '$true' WHERE id = '$accepted_orderid'";
+        $sql = "SELECT * FROM admin_table WHERE admin_email = '$admin_email' ";
+        $query = mysqli_query($conn, $sql);
+        $admin_detail = mysqli_fetch_assoc($query);
+        $admin_id = $admin_detail['id'];
+        $sql = "UPDATE orders SET accepted = '$true', admin_id = '$admin_id' WHERE id = '$accepted_orderid'";
         $query = mysqli_query($conn, $sql);
         
         if($query){

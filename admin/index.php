@@ -90,7 +90,14 @@ body{
 
 
 
-    <div id="about-us">
+    <div id="about-us" style="color: white;
+    font-family: arial;
+    font-size: 21px;
+    width: 80%;
+    margin: 148px auto;
+    padding: 10% 40px;
+    background: rgba(0,0,0,0.5);
+}">
         <h1 class="headings">About us</h1>
 
         <p>Welcome to the home of delicious gourmet veritey of food. Foodies is a modern contemporary restaurant that
@@ -101,8 +108,16 @@ body{
             maintain their flavour and shape.</p>
     </div>
 
-    <h1 class="headings">find us here</h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d924244.0619641689!2d66.59499551729773!3d25.192146526892635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C+Karachi+City%2C+Sindh!5e0!3m2!1sen!2s!4v1558384018887!5m2!1sen!2s"
+    <h1 style="text-transform: capitalize;
+    color: white;
+    font-family: arial;
+    margin: 24px auto;
+    text-align: center;
+}" class="headings">find us here</h1>
+    <iframe style="display: block;
+    margin: 0px auto;
+    height: 300px;
+    width: 90%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d924244.0619641689!2d66.59499551729773!3d25.192146526892635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C+Karachi+City%2C+Sindh!5e0!3m2!1sen!2s!4v1558384018887!5m2!1sen!2s"
         frameborder="0" allowfullscreen>
     </iframe>
 

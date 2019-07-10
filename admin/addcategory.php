@@ -8,8 +8,15 @@ if(isset($_SESSION['admin_email']) & !empty($_SESSION['admin_email'])){
 
         require_once 'connection.php'; 
 
+        $admin_email = $_SESSION['admin_email'];
+        $sql = "SELECT * FROM admin_table WHERE admin_email = '$admin_email' ";
+        $query = mysqli_query($conn, $sql);
+        $admin_detail = mysqli_fetch_assoc($query);
+        $admin_id = $admin_detail['id'];
+        
+
         $category_name =  $_POST['category_name'];
-        $sql = "INSERT INTO category (category_name) VALUES ('$category_name')";
+        $sql = "INSERT INTO category (category_name,admin_id) VALUES ('$category_name','$admin_id')";
         $query = mysqli_query($conn, $sql);
         if($query){
             echo "<script>

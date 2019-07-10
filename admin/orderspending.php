@@ -56,6 +56,7 @@
                 $products_query =  mysqli_query($conn,$orderdproductsql);
                 while($orderdetailsrow = mysqli_fetch_assoc($products_query)){
 
+                    if($orderdetailsrow['product_id'] != NULL ){
                     $productnamesql = "SELECT * FROM products WHERE id={$orderdetailsrow['product_id']}";
                     $productnamequery =  mysqli_query($conn,$productnamesql);
                     $productnameresult = mysqli_fetch_assoc($productnamequery);
@@ -68,7 +69,10 @@
                    
                     
                     
-               <?php } ?>
+                    <?php }else{ ?>
+                        <p>the product was deleted</p>
+                   <?php }
+                } ?>
 
                <h5>total price : <?php echo $row['order_price']; ?></h5>
 

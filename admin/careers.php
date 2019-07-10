@@ -11,26 +11,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
-    <link rel="stylesheet" href="top off website.css">
+    <!-- <link rel="stylesheet" href="top off website.css"> -->
+    <link rel="stylesheet" href="../styles/sign-up.css">  
+
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
+    <style>
+        input{
+            width: 70%;
+        }
+        textarea{
+            display: block;
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+        }
+    </style>
 </head>
 
 
 <body>
+<?php include('navbar.php'); ?>
+
 <form action="careers.php" method="POST" class="modal_content" id="careers-form">
     <div class="container">
 
-        <h1 class="headings">Careers at foodies</h1>
+        <h1 class="headings" style="text-align: center;
+    color: white;
+}">Careers at foodies</h1>
 
-        <p class="formText">Submit your application.</p>
+        <p class="formText" style="text-align: center;
+    color: white;
+}">Submit your application.</p>
 
-        <hr>
 
         <input type="text" placeholder="Enter Your Full Name" name="applicant_name" required>
-
+        <span id="span"><?php echo $nameerr; ?></span>
 
         <input type="text" placeholder="Enter Your Email" name="applicant_email" required>
+        <span id="span"><?php echo $emailerr; ?></span>
 
         <select name="applicant_degree" class="careers-select-options" title="Degree Level" required="">
             <option value="" selected=""> Select Highest Degree </option>
@@ -41,7 +60,8 @@
             <option value="18">MPhil</option>
             <option value="20">PhD</option>
         </select>
-
+        <span id="span"><?php echo $degerr; ?></span>
+<!-- 
         <select name="applicant_position" class="careers-select-options" title="Select Department" required="">
             <option value="" selected=""> Do you have Work Experience? </option>
             <option value="0"> Fresh </option>
@@ -50,7 +70,7 @@
             <option value="6"> 5 - 7 Years </option>
             <option value="8"> 7 - 9 Years </option>
             <option value="10"> 10 or More Years </option>
-        </select>
+        </select> -->
 
         <select name="applicant_position" type="text" class="careers-select-options" id="tags" placeholder="Area">
             <option value="" selected=""> Position you are applying for </option>
@@ -67,8 +87,8 @@
             <option value="12">Call Center</option>
             <option value="13">Maintenance</option>
             <option value="14">Food Quality Assurance</option>
-
         </select>
+        <span id="span"><?php echo $posterr; ?></span>
 
         <select name="applicant_city" class="careers-select-options" title="Select City" required="">
             <option value="" selected=""> Select Your City </option>
@@ -100,15 +120,16 @@
             <option value="28"> Rahwali </option>
             <option value="29"> Kings Mall Gujranwala </option>
         </select>
+        <span id="span"><?php echo $cityerr; ?></span>
 
         <textarea class="form-control-textarea" name="coverletter" id="msg" title="Cover Letter" placeholder="Cover Letter"></textarea>
-        <input type="file" id="cv" name="cv" title="Upload your cv, (only Ms. Word and PDF files are supported)"
-            required="">
+        <span id="span"><?php echo $covererr; ?></span>
 
         <div class="clearfix">
-            <button type="submit" class="submitbtn">Submit</button>
-            <button type="button" onclick="window.document.getElementById('careers').style.display='none'"
-                class="cancelbtn">Cancel</button>
+            <input type="submit" name="apply" value="apply">
+            <!-- < type="submit" name="apply" value="apply" class="submitbtn">Submit</button> -->
+            <!-- <button type="button" onclick="window.document.getElementById('careers').style.display='none'" -->
+                <!-- class="cancelbtn">Cancel</button> -->
         </div>
     </div>
 </form>

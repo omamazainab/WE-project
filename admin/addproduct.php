@@ -7,6 +7,11 @@ if( isset($_SESSION['admin_email'])){
     if(isset($_POST['add_product']))
     {
 
+        $admin_email = $_SESSION['admin_email'];
+        $sql = "SELECT * FROM admin_table WHERE admin_email = '$admin_email' ";
+        $query = mysqli_query($conn, $sql);
+        $admin_detail = mysqli_fetch_assoc($query);
+        $admin_id = $admin_detail['id'];
         
         
 
@@ -33,7 +38,7 @@ if( isset($_SESSION['admin_email'])){
                                             $filepath =  $location.$img_name;
                                             if(move_uploaded_file($tmp_name,$filepath)){
                                             
-                                                            $sql = "INSERT INTO products (product_name, product_description, product_category, product_price, product_image) VALUES ('$product_name', '$product_description', '$product_category', '$product_price', '$filepath')";
+                                                            $sql = "INSERT INTO products (product_name, product_description, product_category, product_price, product_image,admin_id) VALUES ('$product_name', '$product_description', '$product_category', '$product_price', '$filepath','$admin_id')";
                                                             $res = mysqli_query($conn, $sql);
                                                             if($res){ echo "<script> alert ('product added Sucessfully '); </script>";
                                                                 header('location:products.php');

@@ -11,6 +11,22 @@
     <link rel="stylesheet" href="sign-up.css">  
     <!-- <link rel="stylesheet" href="top off website.css"> -->
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="../styles/sign-up.css">  
+
+    <style>
+        input,select,textarea{
+    border-radius: 6px 6px 6px 6px;
+    padding: 1% 5%;
+    margin: 2% auto;
+    width: 80%;
+    display: block;
+}
+
+select{
+    width: 90%;
+}
+    </style>
 
 </head>
 <body>
@@ -19,9 +35,9 @@
 
 <form action="contact-us.php"  enctype="multipart/form-data" method="POST" class="modal_content" id="contact-us-form">
             <div class="container">
-                <h1 class="headings">Contact us</h1>
+                <h1 style="text-align:center;color:white;" class="headings">Contact us</h1>
 
-                <hr>
+                
 
                 <div class="text">
                     <input type="text" placeholder="Enter Your Full Name" name="contact_name" required> 
@@ -95,6 +111,7 @@
                         </div>
             </div>
         </form>
+        <?php include('footer.php'); ?>
 
 </body>
 </html>

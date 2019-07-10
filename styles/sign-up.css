@@ -9,7 +9,7 @@ body{
     color: white;
 }
 
-input{
+input,select{
     border-radius: 6px 6px 6px 6px;
     padding: 1% 5%;
     margin: 2% auto;
